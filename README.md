@@ -22,11 +22,11 @@ De 5 seneste opslag fra staldens Facebook-**side** vises som kort under "Følg m
 Opsætning (én gang, skal gøres af en administrator af Facebook-siden):
 
 1. Gå til developers.facebook.com → **Mine apps** → **Opret app** (type: Virksomhed).
-2. Åbn **Graph API Explorer**, vælg appen og siden, og giv tilladelserne  og . Hent et **sideadgangstoken** og forlæng det i **Access Token Debugger** ("Extend Access Token"). Et sidetoken lavet ud fra et forlænget brugertoken udløber ikke.
-3. Find sidens id (står under sidens "Om" eller i Graph API Explorer:  med sidetokenet).
+2. Åbn **Graph API Explorer**, vælg appen og siden, og giv tilladelserne `pages_show_list` og `pages_read_engagement`. Hent et **sideadgangstoken** og forlæng det i **Access Token Debugger** ("Extend Access Token"). Et sidetoken lavet ud fra et forlænget brugertoken udløber ikke.
+3. Find sidens id (står under sidens "Om" eller i Graph API Explorer: `me?fields=id,name` med sidetokenet).
 4. I GitHub-repoet: **Settings → Secrets and variables → Actions**:
-   - **Secret**  = sidetokenet
-   - **Variable**  = sidens id
+   - **Secret** `FB_TOKEN` = sidetokenet
+   - **Variable** `FB_SIDE` = sidens id
 5. Kør workflowet "Opdater data" (Actions → Run workflow). Så kommer opslagene på siden, og derefter opdateres de hver dag.
 
 Tokenet ligger kun som hemmelighed i GitHub og kommer aldrig ud på sitet.
@@ -34,7 +34,7 @@ Tokenet ligger kun som hemmelighed i GitHub og kommer aldrig ud på sitet.
 ## Ret indhold
 
 Alt indhold står i `templates.mjs`: kontaktoplysninger i `SITE` øverst, højdepunkter i `HOEJDEPUNKTER`. Design i `assets/css/site.css`.
-Når staldens Facebook-side er kendt, sættes `SITE.facebook` – så vises opslagene på forsiden (efter samtykke).
+Når staldens Facebook-side er kendt, sættes `SITE.facebook`, så linket til siden vises. Uden token (se ovenfor) vises Facebooks egen opslagsboks i stedet – først efter samtykke, fordi den sætter cookies.
 
 ## Kilder
 
