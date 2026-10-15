@@ -6,7 +6,7 @@
 //   node build.mjs --serve    byg og vis på http://localhost:4173
 //   node build.mjs --test     selvtjek af formatering og datalogik
 
-import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, cp, rm, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import http from 'node:http';
@@ -106,10 +106,49 @@ async function hentTravinfo(gammel) {
   };
 }
 
+// ---------- Facebook ----------
+
+// De 5 seneste opslag fra staldens Facebook-side hentes via Meta's Graph API, når FB_SIDE (sidens id eller brugernavn)
+// og FB_TOKEN (et sideadgangstoken) er sat. Billederne gemmes på sitet selv, så de ikke udløber og ikke sætter cookies.
+const FBFIL = path.join(ROD, 'data', 'facebook.json');
+const FBMAPPE = path.join(ROD, 'assets', 'fb');
+const GRAPH = 'https://graph.facebook.com/v24.0'; // ponytail: fast API-version – hæv den, når Meta udfaser den (ca. 2 år efter udgivelse)
+
+/** Opslag fra Graph API → det, sitet viser. Opslag uden både tekst og billede bruges ikke. */
+const tilOpslag = (p) => ({
+  id: p.id,
+  dato: p.created_time.slice(0, 10),
+  tekst: (p.message ?? '').trim(),
+  link: p.permalink_url,
+  billede: p.full_picture ? `fb-${p.id.replace(/\W/g, '-')}.jpg` : '',
+});
+
+async function hentFacebook() {
+  const svar = await fetch(`${GRAPH}/${encodeURIComponent(process.env.FB_SIDE)}/posts?fields=message,created_time,permalink_url,full_picture&limit=15`, {
+    headers: { Authorization: `Bearer ${process.env.FB_TOKEN}` }, signal: AbortSignal.timeout(20_000),
+  });
+  if (!svar.ok) throw new Error(`Facebook svarede ${svar.status}`);
+  const raa = (await svar.json()).data.filter((p) => p.message || p.full_picture).slice(0, 5);
+  const opslag = raa.map(tilOpslag);
+  await mkdir(FBMAPPE, { recursive: true });
+  for (const [i, p] of raa.entries()) {
+    if (!p.full_picture) continue;
+    const billede = await fetch(p.full_picture, { signal: AbortSignal.timeout(20_000) });
+    if (billede.ok) await writeFile(path.join(FBMAPPE, opslag[i].billede), Buffer.from(await billede.arrayBuffer()));
+    else opslag[i].billede = '';
+  }
+  // ryd billeder fra opslag, der ikke længere er blandt de 5 seneste
+  const behold = new Set(opslag.map((p) => p.billede));
+  for (const fil of await readdir(FBMAPPE)) if (!behold.has(fil)) await rm(path.join(FBMAPPE, fil));
+  await writeFile(FBFIL, `${JSON.stringify(opslag, null, 1)}\n`);
+  return opslag.length;
+}
+
 // ---------- byg ----------
 
 async function byg() {
   const data = JSON.parse(await readFile(DATAFIL, 'utf8'));
+  data.facebook = await readFile(FBFIL, 'utf8').then(JSON.parse).catch(() => []);
   const kort = JSON.parse(await readFile(path.join(ROD, 'data', 'danmark.json'), 'utf8'));
   await rm(DIST, { recursive: true, force: true });
   await cp(path.join(ROD, 'assets'), path.join(DIST, 'assets'), { recursive: true });
@@ -177,6 +216,9 @@ function test() {
   const flettet = flet([{ id: 'a', dato: '2026-10-02', loeb: 1, ny: true }], [{ id: 'a', dato: '2026-10-02', loeb: 1 }, { id: 'b', dato: '2026-10-03', loeb: 4 }]);
   assert.deepEqual(flettet.map((r) => r.id), ['b', 'a']);
   assert.equal(flettet[1].ny, true);
+  const fb = tilOpslag({ id: '123_456', created_time: '2026-10-14T18:03:00+0000', message: ' Sejr i Aalborg! ', permalink_url: 'https://www.facebook.com/x', full_picture: 'https://scontent/x.jpg' });
+  assert.deepEqual(fb, { id: '123_456', dato: '2026-10-14', tekst: 'Sejr i Aalborg!', link: 'https://www.facebook.com/x', billede: 'fb-123_456.jpg' });
+  assert.equal(tilOpslag({ id: '1', created_time: '2026-10-14T00:00:00+0000', permalink_url: 'x' }).billede, '');
   console.log('Selvtjek OK');
 }
 
@@ -195,6 +237,10 @@ else {
       // Sitet må aldrig gå i stykker, fordi datakilden driller: behold de gamle data og byg videre.
       console.warn(`Kunne ikke hente nye data (${fejl.message}) – bygger med de gemte.`);
       if (!gammel) throw fejl;
+    }
+    if (process.env.FB_SIDE && process.env.FB_TOKEN) {
+      // Samme princip: fejler Facebook, vises de gemte opslag.
+      try { console.log(`Hentede ${await hentFacebook()} opslag fra Facebook.`); } catch (fejl) { console.warn(`Kunne ikke hente Facebook-opslag (${fejl.message}) – bruger de gemte.`); }
     }
   }
   await byg();

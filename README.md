@@ -15,6 +15,22 @@ node build.mjs --test     selvtjek
 - `.github/workflows/opdater.yml` henter data hver morgen og ved hvert push til `main` og gemmer dem i repoet – så bygger Vercel en ny udgave. Fejler hentningen, bygges der videre med de gemte data.
 - På Vercel bygges sitet med `vercel.json` og får projektets adresse automatisk. En `vercel.app`- eller `github.io`-adresse holdes ude af søgemaskinerne.
 
+## Facebook-opslag på forsiden
+
+De 5 seneste opslag fra staldens Facebook-**side** vises som kort under "Følg med" på forsiden. De hentes ved den daglige opdatering via Meta's Graph API, og billederne gemmes på sitet selv – så der er ingen indlejring, ingen cookies og intet klik. Er der ingen opslag, vises sektionen bare uden.
+
+Opsætning (én gang, skal gøres af en administrator af Facebook-siden):
+
+1. Gå til developers.facebook.com → **Mine apps** → **Opret app** (type: Virksomhed).
+2. Åbn **Graph API Explorer**, vælg appen og siden, og giv tilladelserne  og . Hent et **sideadgangstoken** og forlæng det i **Access Token Debugger** ("Extend Access Token"). Et sidetoken lavet ud fra et forlænget brugertoken udløber ikke.
+3. Find sidens id (står under sidens "Om" eller i Graph API Explorer:  med sidetokenet).
+4. I GitHub-repoet: **Settings → Secrets and variables → Actions**:
+   - **Secret**  = sidetokenet
+   - **Variable**  = sidens id
+5. Kør workflowet "Opdater data" (Actions → Run workflow). Så kommer opslagene på siden, og derefter opdateres de hver dag.
+
+Tokenet ligger kun som hemmelighed i GitHub og kommer aldrig ud på sitet.
+
 ## Ret indhold
 
 Alt indhold står i `templates.mjs`: kontaktoplysninger i `SITE` øverst, højdepunkter i `HOEJDEPUNKTER`. Design i `assets/css/site.css`.

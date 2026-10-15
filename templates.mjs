@@ -133,6 +133,7 @@ function afled(data, idag) {
     traenerAar,
     foersteTraenerAar: traenerAar.at(-1)?.aar,
     traenerSejreIalt: traenerAar.reduce((s, x) => s + x.sejre, 0),
+    fb: (data.facebook ?? []).slice(0, 5),
   };
 }
 
@@ -444,23 +445,41 @@ const sejrssoejler = (raekker) => {
 
 const formkurve = (liste) => `<ol class="form" aria-label="Placeringer i de seneste ${liste.length} starter, nyeste først">${liste.map((r) => `<li class="pl${plKlasse(r.placering)}"><span class="sr">${esc(r.hest)}: </span>${plac(r.placering)}</li>`).join('')}</ol>`;
 
-const foelg = () => `
+/** Lang tekst forkortes ved et ordskifte. */
+const kortTekst = (s, max = 240) => (s.length <= max ? s : `${s.slice(0, s.lastIndexOf(' ', max))}…`);
+
+// De seneste Facebook-opslag (hentet af build.mjs) som kort. Vises kun, når der er opslag.
+const fbKort = (liste) => `
+    <ul class="fbkort" aria-label="Seneste opslag fra Facebook">${liste.map((p, i) => `
+      <li data-vis style="--i:${i}">
+        <a href="${esc(p.link)}" target="_blank" rel="noopener">
+          ${p.billede ? `<img src="${R}assets/fb/${p.billede}" alt="" loading="lazy" decoding="async">` : ''}
+          <time datetime="${p.dato}">${langDato(p.dato)}</time>
+          ${p.tekst ? `<p>${esc(kortTekst(p.tekst))}</p>` : ''}
+          <span class="fbkort__mere">Se opslaget på Facebook ${ud}</span>${nyFane}
+        </a>
+      </li>`).join('')}
+    </ul>`;
+
+const foelg = (fb = []) => `
 <section class="sek sek--lys">
   <div class="wrap foelg">
     <div>
       <p class="etiket" data-vis>Følg med</p>
       <h2 data-vis style="--i:1">Hverdagen <em>på ${SITE.sted}.</em></h2>
-      <p data-vis style="--i:2">Sejre, startdage og livet i stalden deles løbende på Instagram.</p>
+      <p data-vis style="--i:2">Sejre, startdage og livet i stalden deles løbende${fb.length ? ' – her er de seneste opslag fra Facebook' : ' på Instagram'}.</p>
     </div>
     <div class="foelg__links" data-vis style="--i:2">
       <a class="some" href="${SITE.instagram}" target="_blank" rel="noopener"><span>Instagram</span><b>${SITE.instagramNavn}</b>${ud}${nyFane}</a>
-      ${SITE.facebook ? `<a class="some" href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a>
-      <div class="fb" data-fb="${SITE.facebook}">
+      ${SITE.facebook ? `<a class="some" href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a>` : ''}
+      ${SITE.facebook && !fb.length ? `<div class="fb" data-fb="${SITE.facebook}">
         <button class="knap knap--kant" type="button">Vis de seneste opslag ${pil}</button>
         <p class="fb__note">Opslagene hentes fra Facebook og sætter cookies derfra.</p>
       </div>` : ''}
     </div>
   </div>
+  ${fb.length ? `<div class="wrap">${fbKort(fb)}
+  </div>` : ''}
 </section>`;
 
 // ---------- sider ----------
@@ -583,7 +602,7 @@ const forside = (o) => `
     ${fotoboks('foto-aalborg-1', 'Travhest med startnummer 5 på banen i Aalborg', { sizes: '(min-width: 900px) 34vw, 80vw' })}
   </div>
 </section>
-${foelg()}
+${foelg(o.fb)}
 ${kontaktbaand()}`;
 
 const omNicklas = (o, data) => `
