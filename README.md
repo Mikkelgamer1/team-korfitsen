@@ -1,57 +1,31 @@
-# Stald Magnus M. Nielsen – hjemmeside
+# Team Korfitsen – hjemmeside
 
-Statisk site (HTML, CSS, lidt JavaScript). Ingen afhængigheder, ingen database og ingen egne cookies – Facebook-opslagene på forsiden hentes først efter samtykke. Kræver kun Node 20+ for at bygge.
+Statisk site for travtræner Nicklas Korfitsen (licens 508510). Ingen afhængigheder – kræver kun Node 20+.
 
-```bash
-node build.mjs --serve
+```
+node build.mjs            byg til dist/ med de gemte data
+node build.mjs --hent     hent friske data fra Dansk Hestevæddeløb først
+node build.mjs --serve    byg og vis på http://localhost:4173 (PORT=… for en anden port)
+node build.mjs --test     selvtjek
 ```
 
-Åbn derefter http://localhost:4173. Det færdige site ligger i `dist/`.
+## Det opdaterer sig selv
 
-| Kommando | Gør |
-| --- | --- |
-| `node build.mjs` | Bygger `dist/` med de gemte data |
-| `node build.mjs --hent` | Henter friske data fra Dansk Hestevæddeløb og bygger |
-| `node build.mjs --serve` | Bygger og viser sitet lokalt |
-| `node build.mjs --test` | Selvtjek af formatering og datalogik |
-
-## Sådan holder sitet sig selv opdateret
-
-Heste, resultater, kommende starter og statistik kommer fra Dansk Hestevæddeløbs sportsdata – de samme data, som travinfo.dk viser. `--hent` gemmer dem i `data/travinfo.json`, og siderne bygges ud fra den fil.
-
-- **Heste i træning** følger den officielle træningsliste. Kommer en hest til eller rejser, følger siden selv med.
-- **Resultater, statistik, søjlediagrammer, formkurve og Danmarkskortet** tegnes ud fra de samme data ved hver kørsel. Fejler hentningen, bygges der videre med de gemte data, og datoen for seneste opdatering står på siden.
-- Magnus skal ikke gøre noget.
-
-`.github/workflows/opdater.yml` kører `--hent` hver morgen og ved hvert push til `main` og udgiver på GitHub Pages. Sitet ligger foreløbig på https://mikkelgamer1.github.io/stald-magnus-m-nielsen/, hvor `robots.txt` holder det ude af søgemaskinerne. Når domænet er på plads, sættes repo-variablen `SITE_URL` til den rigtige adresse – så åbnes der for søgemaskinerne af sig selv.
-
-Andre muligheder: Netlify eller Cloudflare Pages (build-kommando `node build.mjs --hent`, mappe `dist`, plus et dagligt build-hook), eller upload `dist/` til et almindeligt webhotel. På et webhotel uden automatik står tallene stille, indtil der bygges og uploades igen.
+- **Heste i træning, resultater, kommende starter og statistik** hentes fra Dansk Hestevæddeløbs åbne data (samme kilde som travinfo.dk) og gemmes i `data/travinfo.json`.
+- `.github/workflows/opdater.yml` henter data hver morgen og ved hvert push til `main`. Fejler hentningen, bygges der videre med de gemte data.
+- På Vercel bygges sitet med `vercel.json` og får projektets adresse automatisk. En `vercel.app`- eller `github.io`-adresse holdes ude af søgemaskinerne.
 
 ## Ret indhold
 
-| Hvad | Hvor |
-| --- | --- |
-| Telefon, mail, adresse, links, domæne | `SITE` øverst i `templates.mjs` |
-| Tekster | `templates.mjs` (én funktion pr. side) |
-| Billeder af enkelte heste | `HESTEFOTO` i `templates.mjs` (hest-id → filnavn) |
-| Banernes placering på kortet | `BANE_POS` i `templates.mjs` |
-| Farver, typografi, layout | `assets/css/site.css` |
-| Billeder | `assets/img/` – erstat filen med samme navn og størrelse |
+Alt indhold står i `templates.mjs`: kontaktoplysninger i `SITE` øverst, højdepunkter i `HOEJDEPUNKTER`. Design i `assets/css/site.css`.
+Når staldens Facebook-side er kendt, sættes `SITE.facebook` – så vises opslagene på forsiden (efter samtykke).
 
-Tjeklisten før lancering og listen over midlertidige billeder ligger i `LANCERING.md`, som kun findes lokalt.
-
-## Kilder til fakta
+## Kilder
 
 | Oplysning | Kilde |
 | --- | --- |
-| Fødselsår, licens (A1), hjemmebane, farver, statistik, træningsliste, resultater | Dansk Hestevæddeløb / travinfo.dk, licens 517710 |
-| Telefon, mail | skive-trav.dk/om-os/traenere og staldens Facebook-side |
-| Adresse (Flyvej 16, 7800 Skive), ydelser (tilkøring af ungheste, træning af løbsheste) | Staldens Facebook-side |
-| Sparring ved hestekøb og auktioner | Staldens Facebook-opslag 11. august 2026 |
-| DM for jockeyer 2021, nr. 2 i 2024, travfamilie, Sigter mod stjernerne, Jockeyserien, ansat hos Morten Friis | travet.dk 18. februar 2025 |
-| Summer Meeting Talents to år i træk | travet.dk 27. juni 2024 |
-| Nominering til Årets Komet | danskhv.dk 10. januar 2025 |
-| "En af landets yngste trænere" | travet.dk 16. maj 2026 |
-| Karat C N som Kriteriumsvinder og debut for stalden | trav24.dk 1. september 2026, travservice.dk 20. september 2026 |
-| Skive Trav: 1948, flytning 1966, lysanlæg 2019–20 | skive-trav.dk/om-os |
-| Danmarks omrids på kortet (`data/danmark.json`) | Natural Earth 1:50m, public domain. Bornholm er udeladt, og banernes placering er omtrentlig |
+| Født 1999, A1-licens, hjemmebane, adresse, telefon, farver | Dansk Hestevæddeløb (licens 508510) |
+| Vang Hovedgaard, telefon | Staldens Instagram-profil @teamkorfitsen |
+| Højdepunkter (Moor Jeting, Jane Hall, Gabi Kyvsgård, Ivana Nordic, 26. maj 2025) | Staldens egne opslag på Instagram |
+| Knutsson Rising Star Cup 2020, første start i USA 25. marts 2022 med Epos Ostervang DK | harnessracingupdate.com og playmeadowlands.com (marts 2022) |
+| Spar Nord Arena Aalborg | aav.dk |
