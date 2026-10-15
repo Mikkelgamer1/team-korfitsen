@@ -1,0 +1,48 @@
+# Henter friske data fra Dansk Hestevæddeløb, bygger sitet og udgiver det på GitHub Pages.
+# Kører hver morgen, ved hvert push til main og når man trykker "Run workflow".
+# Kræver: Settings → Pages → Source = "GitHub Actions". Sæt evt. variablen SITE_URL til det rigtige domæne.
+name: Opdater og udgiv
+
+on:
+  schedule:
+    - cron: '15 4 * * *' # ca. kl. 06 dansk tid
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  udgiv:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.udgiv.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node build.mjs --test
+      - run: node build.mjs --hent
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+      - name: Gem de nye data i repoet
+        run: |
+          git config user.name "Automatisk opdatering"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/travinfo.json
+          git diff --cached --quiet || git commit -m "Opdater data fra Dansk Hestevæddeløb"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: udgiv
+        uses: actions/deploy-pages@v4
