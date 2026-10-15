@@ -10,8 +10,8 @@
 :root {
   --sort: #0c0e0d;
   --grafit: #171b19;
-  --groen: #286040;
-  --groen-moerk: #1c4630;
+  --groen: #396848;
+  --groen-moerk: #2a4f36;
   --groen-lys: #5cd892;
   --kalk: #f1f0ea;
   --tekst: #121614;
@@ -83,8 +83,8 @@ h3 { font-size: 1.6rem; line-height: 1; }
 
 .top { position: fixed; inset: 0 0 auto; z-index: 50; height: var(--top); background: var(--sort); color: #fff; border-bottom: 1px solid var(--linje-moerk); }
 .top__inner { display: flex; align-items: center; gap: 28px; height: 100%; }
-.logo { display: block; height: 50px; width: auto; }
-.logo--stor { height: 64px; margin-bottom: 18px; }
+.logo { display: block; height: 52px; width: auto; }
+.logo--stor { height: 92px; margin-bottom: 22px; }
 .top__logo { margin-right: auto; }
 .top__nav { display: flex; gap: clamp(18px, 2.4vw, 34px); }
 .top__nav a { position: relative; padding-block: 8px; font: 600 .95rem/1 var(--disp); letter-spacing: .12em; text-transform: uppercase; color: rgba(255, 255, 255, .78); transition: color .2s; }
@@ -119,9 +119,8 @@ h3 { font-size: 1.6rem; line-height: 1; }
 .hero__bane rect:first-child { stroke: rgba(92, 216, 146, .2); }
 .hero__gitter { position: relative; flex: 1; display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(32px, 5vw, 80px); align-items: center; padding-block: clamp(48px, 8vh, 96px); }
 .hero .etiket { color: var(--groen-lys); }
-.hero h1 { display: grid; margin-bottom: 28px; }
-.hero__team { font-size: clamp(1.6rem, 3.4vw, 2.8rem); letter-spacing: .32em; color: var(--groen-lys); }
-.hero__navn { font-size: clamp(4.2rem, 12.5vw, 11.5rem); line-height: .82; font-style: italic; }
+.hero__logo { margin: 8px 0 30px; }
+.hero__logo img { width: min(100%, 580px); height: auto; }
 .hero__indled { max-width: 46ch; font-size: clamp(1.1rem, 1.5vw, 1.3rem); color: rgba(255, 255, 255, .82); }
 .hero__valg { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 34px; }
 .hero .link { border-color: var(--groen-lys); }
@@ -421,7 +420,7 @@ html:not(.js) .fb { display: none; }
 }
 @media (max-width: 900px) {
   :root { --top: 64px; }
-  .top__cta { display: none; }
+  .top__cta, .hero__bane { display: none; }
   .hero__gitter, .intro, .duo, .resgitter, .tabeller, .cta__inner, .foelg, .artikel, .sekhoved { grid-template-columns: 1fr; }
   .ydelser, .kontakt { grid-template-columns: 1fr; }
   .bund__gitter { grid-template-columns: 1fr 1fr; }

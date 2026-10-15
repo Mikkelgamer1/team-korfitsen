@@ -138,8 +138,8 @@ function afled(data, idag) {
 
 // ---------- fælles dele ----------
 
-// Staldens logo (fra Instagram-profilen – kun 150 px i originalen, så det vises småt).
-const logo = (cls = '', alt = '') => `<img class="logo ${cls}" src="${R}assets/img/logo.png" width="450" height="240" alt="${alt}">`;
+// Staldens logo – hvid udgave med gennemsigtig baggrund (lavet ud fra den originale logofil).
+const logo = (cls = '', alt = '') => `<img class="logo ${cls}" src="${R}assets/img/logo-hvid.png" width="1098" height="572" alt="${alt}">`;
 
 const top = (sti) => `
 <header class="top">
@@ -474,7 +474,7 @@ const forside = (o) => `
   <div class="wrap hero__gitter">
     <div class="hero__tekst">
       <p class="etiket">Travtræner · Aalborg</p>
-      <h1><span class="hero__team">Team</span> <span class="hero__navn">Korfitsen</span></h1>
+      <h1 class="hero__logo"><img src="${R}assets/img/logo-hvid.png" width="1098" height="572" alt="Team Korfitsen" fetchpriority="high"></h1>
       <p class="hero__indled">${SITE.person} er professionel travtræner og kusk med Aalborg som hjemmebane. Stalden holder til på ${SITE.sted} og har ${o.heste.length} heste i træning.</p>
       <p class="hero__valg">${knap('kontakt/', `Kontakt ${SITE.fornavn}`)} ${link('heste/', 'Se hestene')}</p>
     </div>
