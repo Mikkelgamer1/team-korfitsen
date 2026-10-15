@@ -26,13 +26,27 @@ const BANE_POS = { Sk: [9.06, 56.56], 'Ål': [9.87, 57.05], 'År': [10.2, 56.14]
 const HJEM = 'Ål';
 const NAV = [['om-nicklas/', 'Om Nicklas'], ['stalden/', 'Stalden'], ['heste/', 'Heste'], ['resultater/', 'Resultater']];
 
-// Højdepunkter, som stalden selv har delt på Instagram (@teamkorfitsen). Nyeste først.
+// Fotos fra staldens Instagram (@teamkorfitsen). navn: [forhold bredde/højde, bredder…, fotograf]. Fotografens signatur står også på billedet.
+const FOTOS = {
+  'foto-i-fart': [1.416, 480, 847, 'gormfoto.dk'],
+  'foto-moor-jeting': [1.515, 480, 800, 'Burt Seeger'],
+  'foto-moor-jeting-vinder': [1.515, 480, 800, 'Burt Seeger'],
+  'foto-jane-hall': [1.494, 402, 'ALN Pressbild'],
+  'foto-gabi-kyvsgaard': [1.499, 480, 1066, 'gormfoto.dk'],
+  'foto-aalborg-1': [1.501, 480, 533, 'Hesselborg Foto'],
+  'foto-aalborg-2': [1.501, 480, 533, 'Hesselborg Foto'],
+  'foto-stor-pris': [1.501, 480, 800, 'Kjeld Mikkelsen Photography'],
+  'foto-ivana-nordic': [1.501, 480, 800, 'Kjeld Mikkelsen Photography'],
+  'foto-ivana-vinder': [0.976, 480, 520, 'Kjeld Mikkelsen Photography'],
+};
+
+// Højdepunkter, som stalden selv har delt på Instagram (@teamkorfitsen). Nyeste først. [måned, titel, tekst, foto, alt]
 const HOEJDEPUNKTER = [
-  ['2026-10', 'Moor Jeting', 'Vinder af Kriterium Consolation 2026 med Nicklas i sulkyen.'],
-  ['2026-03', 'Jane Hall', 'Vinder et V85-løb på Åbytravet i Sverige – kilometertid 1.12,1 med Nicklas som kusk.'],
-  ['2025-10', 'Gabi Kyvsgård', 'Vinder DM for hopper for andet år i træk.'],
-  ['2025-05', 'Hjemmebanedag i Aalborg', 'Tre sejre og to andenpladser på én løbsdag – 26. maj 2025.'],
-  ['2024-09', 'Ivana Nordic', 'Vinder Aalborg Hoppechampionat. Samme weekend vinder også Karlo Vang, Golden Eye SF og Striking Eagle.'],
+  ['2026-10', 'Moor Jeting', 'Vinder af Kriterium Consolation 2026 med Nicklas i sulkyen.', 'foto-moor-jeting', 'Moor Jeting med vinderdækken efter Kriterium Consolation 2026'],
+  ['2026-03', 'Jane Hall', 'Vinder et V85-løb på Åbytravet i Sverige – kilometertid 1.12,1 med Nicklas som kusk.', 'foto-jane-hall', 'Travheste i fuld fart på Åbytravet'],
+  ['2025-10', 'Gabi Kyvsgård', 'Vinder DM for hopper for andet år i træk.', 'foto-gabi-kyvsgaard', 'Gabi Kyvsgård med laurbærkrans og dækken efter DM for hopper'],
+  ['2025-05', 'Hjemmebanedag i Aalborg', 'Tre sejre og to andenpladser på én løbsdag – 26. maj 2025.', 'foto-aalborg-2', 'Travhest med startnummer 2 på banen i Aalborg'],
+  ['2024-09', 'Ivana Nordic', 'Vinder Aalborg Hoppechampionat. Samme weekend vinder også Karlo Vang, Golden Eye SF og Striking Eagle.', 'foto-ivana-nordic', 'Ivana Nordic med vinderdækken efter Aalborg Hoppechampionat 2024'],
 ];
 
 // ---------- små hjælpere ----------
@@ -75,7 +89,17 @@ const nyFane = '<span class="sr"> (åbner i ny fane)</span>';
 const ekstern = (href, tekst, cls = 'link') => `<a class="${cls}" href="${href}" target="_blank" rel="noopener">${tekst} ${ud}${nyFane}</a>`;
 const knap = (href, tekst, cls = '') => `<a class="knap ${cls}" href="${R}${href}">${tekst} ${pil}</a>`;
 const link = (href, tekst) => `<a class="link" href="${R}${href}">${tekst} ${pil}</a>`;
-const striber = (cls = '') => `<span class="striber ${cls}" aria-hidden="true"><i></i><i></i><i></i></span>`;
+const foto = (navn, alt, { sizes = '100vw', lazy = true } = {}) => {
+  const [forhold, ...rest] = FOTOS[navn];
+  const bredder = rest.filter((x) => typeof x === 'number');
+  const max = bredder.at(-1);
+  const src = (w) => `${R}assets/img/${navn}-${w}.webp`;
+  return `<img src="${src(bredder[0])}" srcset="${bredder.map((w) => `${src(w)} ${w}w`).join(', ')}" sizes="${sizes}" width="${max}" height="${Math.round(max / forhold)}" alt="${esc(alt)}"${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high"'}>`;
+};
+const fotograf = (navn) => FOTOS[navn].at(-1);
+// Foto med fotografens navn i hjørnet.
+const fotoboks = (navn, alt, opt, cls = '') => `<figure class="foto ${cls}">${foto(navn, alt, opt)}<figcaption>Foto: ${fotograf(navn)}</figcaption></figure>`;
+const striber = (cls = '') =>`<span class="striber ${cls}" aria-hidden="true"><i></i><i></i><i></i></span>`;
 
 // ---------- afledte tal ----------
 
@@ -387,8 +411,9 @@ const ydelser = (o) => `
     </ol>`;
 
 const hoejdepunkter = (antal = HOEJDEPUNKTER.length) => `
-    <ol class="hoejde">${HOEJDEPUNKTER.slice(0, antal).map(([ym, titel, tekst], i) => `
+    <ol class="hoejde">${HOEJDEPUNKTER.slice(0, antal).map(([ym, titel, tekst, navn, alt], i) => `
       <li data-vis style="--i:${i}">
+        ${fotoboks(navn, alt, { sizes: '(min-width: 1100px) 24vw, (min-width: 600px) 46vw, 92vw' })}
         <time datetime="${ym}">${maaned(ym)}</time>
         <h3>${esc(titel)}</h3>
         <p>${esc(tekst)}</p>
@@ -452,15 +477,18 @@ const forside = (o) => `
       <p class="hero__indled">${SITE.person} er professionel travtræner og kusk med Aalborg som hjemmebane. Stalden holder til på ${SITE.sted} og har ${o.heste.length} heste i træning.</p>
       <p class="hero__valg">${knap('kontakt/', `Kontakt ${SITE.fornavn}`)} ${link('heste/', 'Se hestene')}</p>
     </div>
+    <div class="hero__hoejre">
+    ${fotoboks('foto-i-fart', 'Travhest i fuld fart med kusken i staldens grønne farver', { sizes: '(min-width: 901px) 40vw, 92vw', lazy: false }, 'hero__foto')}
     <div class="tavle" aria-label="Sæsonen i tal">
       <p class="tavle__titel">Sæson ${o.saeson.aar} <span>som træner</span></p>
       <dl>
         <div><dt>Sejre</dt><dd>${o.saeson.sejre}</dd></div>
         <div><dt>Starter</dt><dd>${o.saeson.starter}</dd></div>
         <div><dt>Sejrsprocent</dt><dd>${o.saeson.procent}<small>%</small></dd></div>
-        <div><dt>Indkørt</dt><dd>${mio(o.saeson.praemier)}<small>mio. kr.</small></dd></div>
+        <div><dt>Indkørt, kr.</dt><dd>${mio(o.saeson.praemier)}<small>mio.</small></dd></div>
       </dl>
       <p class="tavle__kilde">Dansk Hestevæddeløb · ${o.opdateret}</p>
+    </div>
     </div>
   </div>
   ${ticker(o.seneste)}
@@ -545,6 +573,15 @@ const forside = (o) => `
     </figure>
   </div>
 </section>
+
+<section class="stribe" aria-label="Billeder fra banen">
+  <div class="stribe__spor">
+    ${fotoboks('foto-moor-jeting-vinder', 'Vindercirklen efter Kriterium Consolation 2026 med Moor Jeting', { sizes: '(min-width: 900px) 34vw, 80vw' })}
+    ${fotoboks('foto-stor-pris', 'Travheste i fuld fart i Aalborg', { sizes: '(min-width: 900px) 34vw, 80vw' })}
+    ${fotoboks('foto-ivana-vinder', 'Nicklas Korfitsen i vindercirklen med Ivana Nordic efter Aalborg Hoppechampionat 2024', { sizes: '(min-width: 900px) 22vw, 60vw' })}
+    ${fotoboks('foto-aalborg-1', 'Travhest med startnummer 5 på banen i Aalborg', { sizes: '(min-width: 900px) 34vw, 80vw' })}
+  </div>
+</section>
 ${foelg()}
 ${kontaktbaand()}`;
 
@@ -559,6 +596,7 @@ ${sidehoved({
 <section class="sek">
   <div class="wrap artikel">
     <aside class="fakta" data-vis>
+      ${fotoboks('foto-ivana-vinder', 'Nicklas Korfitsen i vindercirklen med Ivana Nordic efter Aalborg Hoppechampionat 2024', { sizes: '(min-width: 901px) 320px, 92vw' }, 'fakta__foto')}
       <h2 class="mini">Kort fortalt</h2>
       <dl>
         <div><dt>Født</dt><dd>${data.traener.foedt}</dd></div>
@@ -630,6 +668,10 @@ ${sidehoved({
     </div>
     ${ydelser(o)}
     <p class="note" data-vis>Kontakt ${SITE.fornavn} for pris. ${link('kontakt/', `Kontakt ${SITE.fornavn}`)}</p>
+    <div class="fotopar" data-vis>
+      ${fotoboks('foto-gabi-kyvsgaard', 'Gabi Kyvsgård med laurbærkrans og dækken efter DM for hopper', { sizes: '(min-width: 900px) 46vw, 92vw' })}
+      ${fotoboks('foto-aalborg-2', 'Travhest med startnummer 2 på banen i Aalborg', { sizes: '(min-width: 900px) 46vw, 92vw' })}
+    </div>
   </div>
 </section>
 
@@ -733,7 +775,7 @@ ${sidehoved({
       <div><dt>2.-pladser</dt><dd>${o.saeson.toer}</dd></div>
       <div><dt>3.-pladser</dt><dd>${o.saeson.treer}</dd></div>
       <div><dt>Sejrsprocent</dt><dd>${o.saeson.procent}<small>%</small></dd></div>
-      <div><dt>Indkørt</dt><dd>${mio(o.saeson.praemier)}<small>mio. kr.</small></dd></div>
+      <div><dt>Indkørt, kr.</dt><dd>${mio(o.saeson.praemier)}<small>mio.</small></dd></div>
     </dl>
     <div class="formboks" data-vis style="--i:2">
       <h3 class="mini">Formkurve – de seneste ${o.seneste.length} starter</h3>

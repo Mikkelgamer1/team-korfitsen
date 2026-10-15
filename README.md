@@ -29,3 +29,4 @@ Når staldens Facebook-side er kendt, sættes `SITE.facebook` – så vises opsl
 | Højdepunkter (Moor Jeting, Jane Hall, Gabi Kyvsgård, Ivana Nordic, 26. maj 2025) | Staldens egne opslag på Instagram |
 | Knutsson Rising Star Cup 2020, første start i USA 25. marts 2022 med Epos Ostervang DK | harnessracingupdate.com og playmeadowlands.com (marts 2022) |
 | Spar Nord Arena Aalborg | aav.dk |
+| Fotos | Staldens Instagram (@teamkorfitsen). Fotografer: Burt Seeger, ALN Pressbild, gormfoto.dk, Hesselborg Foto, Kjeld Mikkelsen Photography – navnet står ved hvert billede |

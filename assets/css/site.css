@@ -133,7 +133,7 @@ h3 { font-size: 1.6rem; line-height: 1; }
 .tavle dl { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--linje-moerk); border: 1px solid var(--linje-moerk); }
 .tavle dl div { display: flex; flex-direction: column-reverse; gap: 6px; padding: 18px 18px 16px; background: var(--grafit); }
 .tavle dt { font: 600 .74rem/1 var(--disp); letter-spacing: .18em; text-transform: uppercase; color: rgba(255, 255, 255, .6); }
-.tavle dd { font: 800 clamp(2.6rem, 4.4vw, 3.8rem)/.9 var(--disp); color: var(--groen-lys); font-variant-numeric: tabular-nums; }
+.tavle dd { font: 800 clamp(2.6rem, 4.4vw, 3.8rem)/.9 var(--disp); color: var(--groen-lys); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .tavle small { margin-left: 4px; font-size: .38em; letter-spacing: .06em; color: #fff; }
 .tavle__kilde { margin-top: 14px; font-size: .78rem; color: rgba(255, 255, 255, .5); }
 
@@ -225,7 +225,7 @@ h3 { font-size: 1.6rem; line-height: 1; }
 
 /* ---------- højdepunkter ---------- */
 
-.hoejde { position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px; }
+.hoejde { position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 18px; }
 .hoejde li { padding: 26px 24px 28px; background: rgba(0, 0, 0, .18); border-top: 3px solid #fff; }
 .hoejde time { display: block; margin-bottom: 18px; font: 600 .78rem/1 var(--disp); letter-spacing: .18em; text-transform: uppercase; color: rgba(255, 255, 255, .75); }
 .hoejde h3 { margin-bottom: 10px; font-size: 1.9rem; }
@@ -443,4 +443,39 @@ html:not(.js) .fb { display: none; }
   .tabel th, .tabel td { padding-left: 8px; }
   .startnr h3 { font-size: 1.75rem; }
   .sidehoved__tal { text-align: left; }
+}
+
+/* ---------- fotos (fra staldens Instagram, med fotografens navn) ---------- */
+
+.foto { position: relative; margin: 0; overflow: hidden; background: var(--grafit); }
+.foto img { width: 100%; height: 100%; object-fit: cover; }
+.foto figcaption { position: absolute; right: 0; bottom: 0; padding: 5px 9px; font: 600 .62rem/1 var(--disp); letter-spacing: .12em; text-transform: uppercase; color: rgba(255, 255, 255, .88); background: rgba(12, 14, 13, .72); }
+
+.hero__hoejre { display: grid; }
+.hero__foto { aspect-ratio: 1.416; border-top: 4px solid var(--groen-lys); animation: op .9s var(--ease) .2s both; }
+.hero__hoejre .tavle { position: relative; margin: -64px 0 0 clamp(16px, 3vw, 40px); }
+
+.hoejde .foto { margin: -26px -24px 22px; aspect-ratio: 3 / 2; }
+
+.stribe { padding-block: 12px; background: var(--sort); }
+.stribe__spor { display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; grid-template-rows: repeat(2, clamp(150px, 16vw, 250px)); gap: 12px; padding-inline: 12px; }
+.stribe .foto:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+.stribe .foto:nth-child(2) { grid-area: 1 / 3 / 2 / 4; }
+.stribe .foto:nth-child(3) { grid-area: 1 / 2 / 3 / 3; }
+.stribe .foto:nth-child(4) { grid-area: 2 / 3 / 3 / 4; }
+.stribe .foto img { transition: transform 1.2s var(--ease); }
+.stribe .foto:hover img { transform: scale(1.04); }
+
+.fakta__foto { margin: -28px -28px 22px; aspect-ratio: 1 / 1; }
+.fotopar { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: clamp(40px, 5vw, 64px); }
+.fotopar .foto { aspect-ratio: 3 / 2; }
+
+@media (max-width: 900px) {
+  .hero__hoejre .tavle { margin: -40px 0 0 16px; }
+  .stribe__spor { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, clamp(140px, 32vw, 220px)); }
+  .stribe .foto:nth-child(1) { grid-area: 1 / 1 / 2 / 3; }
+  .stribe .foto:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+  .stribe .foto:nth-child(3) { grid-area: 2 / 2 / 4 / 3; }
+  .stribe .foto:nth-child(4) { grid-area: 3 / 1 / 4 / 2; }
+  .fotopar { grid-template-columns: 1fr; }
 }
