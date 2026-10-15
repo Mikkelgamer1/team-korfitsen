@@ -138,12 +138,13 @@ function afled(data, idag) {
 
 // ---------- fælles dele ----------
 
-const ordmaerke = (cls = '') => `<span class="ordmaerke ${cls}"><b>Team</b> Korfitsen</span>`;
+// Staldens logo (fra Instagram-profilen – kun 150 px i originalen, så det vises småt).
+const logo = (cls = '', alt = '') => `<img class="logo ${cls}" src="${R}assets/img/logo.png" width="450" height="240" alt="${alt}">`;
 
 const top = (sti) => `
 <header class="top">
   <div class="top__inner wrap">
-    <a class="top__logo" href="${R || './'}" aria-label="${SITE.navn} – til forsiden">${ordmaerke()}</a>
+    <a class="top__logo" href="${R || './'}" aria-label="${SITE.navn} – til forsiden">${logo()}</a>
     <nav class="top__nav" aria-label="Primær navigation">
       ${NAV.map(([href, navn]) => `<a href="${R}${href}"${sti.startsWith(href) ? ' aria-current="page"' : ''}>${navn}</a>`).join('\n      ')}
     </nav>
@@ -153,7 +154,7 @@ const top = (sti) => `
 </header>
 <dialog class="menu" id="menu" aria-label="Menu">
   <div class="menu__top wrap">
-    ${ordmaerke()}
+    ${logo()}
     <button class="burger burger--luk" type="button" data-luk commandfor="menu" command="close"><span>Luk</span><i aria-hidden="true"></i></button>
   </div>
   <nav class="menu__nav wrap" aria-label="Menu">
@@ -187,7 +188,7 @@ const bund = (o) => `
 <footer class="bund">
   <div class="wrap bund__gitter">
     <div class="bund__brand">
-      ${ordmaerke('ordmaerke--stor')}
+      ${logo('logo--stor', SITE.navn)}
       <p>Professionel travtræning med Aalborg som hjemmebane. Træning af løbsheste og tilkøring af ungheste.</p>
     </div>
     <nav aria-label="Sider">
