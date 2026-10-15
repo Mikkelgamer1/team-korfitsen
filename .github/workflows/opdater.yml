@@ -1,7 +1,6 @@
-# Henter friske data fra Dansk Hestevæddeløb, bygger sitet og udgiver det på GitHub Pages.
+# Henter friske data fra Dansk Hestevæddeløb og gemmer dem i repoet. Vercel bygger og udgiver ved hvert push.
 # Kører hver morgen, ved hvert push til main og når man trykker "Run workflow".
-# Kræver: Settings → Pages → Source = "GitHub Actions". Sæt evt. variablen SITE_URL til det rigtige domæne.
-name: Opdater og udgiv
+name: Opdater data
 
 on:
   schedule:
@@ -12,19 +11,14 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: data
   cancel-in-progress: true
 
 jobs:
-  udgiv:
+  opdater:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.udgiv.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,8 +26,6 @@ jobs:
           node-version: 22
       - run: node build.mjs --test
       - run: node build.mjs --hent
-        env:
-          SITE_URL: ${{ vars.SITE_URL }}
       - name: Gem de nye data i repoet
         run: |
           git config user.name "Automatisk opdatering"
@@ -41,8 +33,3 @@ jobs:
           git add data/travinfo.json
           git diff --cached --quiet || git commit -m "Opdater data fra Dansk Hestevæddeløb"
           git push
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - id: udgiv
-        uses: actions/deploy-pages@v4
