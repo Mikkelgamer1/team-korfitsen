@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-16T09:01:24.736Z",
+ "opdateret": "2026-10-16T19:24:33.734Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 220,
-   "sejre": 22,
-   "toer": 23,
+   "starter": 226,
+   "sejre": 23,
+   "toer": 25,
    "treer": 31,
    "procent": 10,
-   "praemier": 1160026
+   "praemier": 1184776
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 261,
-   "sejre": 31,
-   "toer": 32,
+   "starter": 269,
+   "sejre": 32,
+   "toer": 34,
    "treer": 37,
    "procent": 12,
-   "praemier": 1440147
+   "praemier": 1469897
   },
   {
    "aar": 2025,
@@ -135,9 +135,9 @@
    "foedt": "2020-05-14",
    "far": "Orlando Vici (FR)",
    "mor": "Erica Hall (SE)",
-   "starter": 30,
-   "placeringer": "2-3-6",
-   "praemier": 58500,
+   "starter": 31,
+   "placeringer": "2-4-6",
+   "praemier": 63500,
    "rekord": "17,7m 14,8ak 14,8am"
   },
   {
@@ -161,9 +161,9 @@
    "foedt": "2020-05-16",
    "far": "Great Challenger (US)",
    "mor": "What A Time",
-   "starter": 26,
+   "starter": 27,
    "placeringer": "2-6-7",
-   "praemier": 89450,
+   "praemier": 91950,
    "rekord": "24,9k 16,0m 14,7ak 15,0am 19,9al"
   },
   {
@@ -226,7 +226,7 @@
    "foedt": "2022-06-20",
    "far": "Trixton (US)",
    "mor": "Noble Conch",
-   "starter": 25,
+   "starter": 26,
    "placeringer": "1-2-3",
    "praemier": 54600,
    "rekord": "18,0k *17,8m 16,2ak 15,9am"
@@ -278,10 +278,10 @@
    "foedt": "2023-05-27",
    "far": "Great Challenger (US)",
    "mor": "Jula Princess (SE)",
-   "starter": 2,
+   "starter": 3,
    "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": "19,2ak 18,7am"
+   "praemier": 2250,
+   "rekord": "18,6m 19,2ak 18,7am"
   },
   {
    "id": 660372,
@@ -304,9 +304,9 @@
    "foedt": "2023-04-24",
    "far": "Donato Hanover (US)",
    "mor": "Magna Vang",
-   "starter": 4,
-   "placeringer": "1-0-2",
-   "praemier": 17000,
+   "starter": 5,
+   "placeringer": "2-0-2",
+   "praemier": 27000,
    "rekord": "17,1am"
   },
   {
@@ -317,9 +317,9 @@
    "foedt": "2022-04-09",
    "far": "Walner (CA)",
    "mor": "Fabulous Sisu (NO)",
-   "starter": 22,
-   "placeringer": "2-7-2",
-   "praemier": 246839,
+   "starter": 23,
+   "placeringer": "2-8-2",
+   "praemier": 251839,
    "rekord": "14,4m 12,4ak 13,0am"
   },
   {
@@ -753,6 +753,78 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837848-659623",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 8,
+   "hestId": 659623,
+   "hest": "Magnificent Sisu (SE)",
+   "placering": "2",
+   "tid": "14,5a",
+   "distance": 2140,
+   "praemie": 5000
+  },
+  {
+   "id": "837862-649481",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 649481,
+   "hest": "Just Time",
+   "placering": "4",
+   "tid": "15,4a",
+   "distance": 2140,
+   "praemie": 2500
+  },
+  {
+   "id": "837861-649115",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "2",
+   "tid": "15,9a",
+   "distance": 2140,
+   "praemie": 5000
+  },
+  {
+   "id": "837861-654579",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 654579,
+   "hest": "Level Up",
+   "placering": "0",
+   "tid": "16,3a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "837853-656722",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 656722,
+   "hest": "Magne",
+   "placering": "1",
+   "tid": "18,2a",
+   "distance": 2140,
+   "praemie": 10000
+  },
+  {
+   "id": "837845-656762",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "placering": "4",
+   "tid": "18,6",
+   "distance": 2140,
+   "praemie": 2250
+  },
   {
    "id": "837785-655727",
    "dato": "2026-10-15",
@@ -4031,54 +4103,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 656762,
-   "hest": "Madame X",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 2,
-   "hestId": 656722,
-   "hest": "Magne",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 4,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 4,
-   "hestId": 654579,
-   "hest": "Level Up",
-   "kusk": "Rene Kjær"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 649481,
-   "hest": "Just Time",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 8,
-   "hestId": 659623,
-   "hest": "Magnificent Sisu (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-10-21",
    "bane": "Ch",
