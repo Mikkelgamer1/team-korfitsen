@@ -434,15 +434,6 @@ const statTabel = (titel, raekker) => `
         </table>
       </div>`;
 
-// Søjler med sejre pr. sæson som træner – tegnet med CSS.
-const sejrssoejler = (raekker) => {
-  const aar = raekker.filter((s) => s.starter > 0).reverse();
-  const max = Math.max(1, ...aar.map((s) => s.sejre));
-  return `<ol class="soejler" aria-label="Sejre som træner pr. sæson">${aar.map((s, i) => `
-        <li style="--h:${Math.round((s.sejre / max) * 100)}%;--n:${i}"><b>${s.sejre}</b><span>${s.aar}</span><span class="sr"> sejre</span></li>`).join('')}
-      </ol>`;
-};
-
 const formkurve = (liste) => `<ol class="form" aria-label="Placeringer i de seneste ${liste.length} starter, nyeste først">${liste.map((r) => `<li class="pl${plKlasse(r.placering)}"><span class="sr">${esc(r.hest)}: </span>${plac(r.placering)}</li>`).join('')}</ol>`;
 
 /** Lang tekst forkortes ved et ordskifte. */
@@ -523,9 +514,8 @@ const forside = (o) => `
       <p data-vis style="--i:3">Som ung kusk vandt han Knutsson Rising Star Cup i 2020 – en serie for unge kuske i Sverige – og i 2022 vandt han i sin første start i USA på The Meadowlands. Som træner har han startet heste siden ${o.foersteTraenerAar}${o.traenerSejreIalt ? ` og vundet ${o.traenerSejreIalt} løb` : ''}.</p>
       <p data-vis style="--i:4">${link('om-nicklas/', `Læs mere om ${SITE.fornavn}`)}</p>
     </div>
-    <div class="intro__soejler" data-vis style="--i:2">
-      <p class="mini">Sejre som træner</p>
-      ${sejrssoejler(o.traenerAar)}
+    <div data-vis style="--i:2">
+      ${fotoboks('foto-ivana-nordic', 'Ivana Nordic med vinderdækken efter Aalborg Hoppechampionat 2024', { sizes: '(min-width: 901px) 40vw, 92vw' }, 'intro__foto')}
     </div>
   </div>
 </section>
