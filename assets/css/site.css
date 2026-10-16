@@ -229,11 +229,11 @@ h3 { font-size: 1.6rem; line-height: 1; }
 .kort figcaption { margin-top: 14px; text-align: center; font-size: .85rem; color: var(--daemp); }
 .sek--sort .kort figcaption { color: rgba(255, 255, 255, .6); }
 .kort__svg { display: block; width: 100%; max-width: 500px; height: auto; margin-inline: auto; overflow: visible; }
-.kort__land { fill: var(--kalk); stroke: #c9ccc4; stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.sek--sort .kort__land { fill: var(--grafit); stroke: #2c332f; }
-.kort__rute { fill: none; stroke: var(--groen); stroke-width: .9; opacity: .55; }
+.kort__land { fill: #dde5dd; stroke: #9fb0a3; stroke-width: 1.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.sek--sort .kort__land { fill: #26302a; stroke: #4a5a4f; }
+.kort__rute { fill: none; stroke: var(--groen); stroke-width: 1.8; stroke-linecap: round; opacity: .85; }
 .kort__prik { fill: var(--groen); }
-.kort__ring { fill: none; stroke: var(--groen); stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.kort__ring { fill: none; stroke: var(--groen); stroke-width: 2; vector-effect: non-scaling-stroke; }
 .kort__tal { font: 600 9.5px var(--sans); fill: #fff; font-variant-numeric: tabular-nums; }
 .kort__navn { font: 600 11px var(--disp); letter-spacing: .08em; text-transform: uppercase; fill: var(--tekst); paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
 .sek--sort .kort__prik { fill: var(--groen-lys); }
