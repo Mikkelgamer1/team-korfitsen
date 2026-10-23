@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-22T09:24:11.623Z",
+ "opdateret": "2026-10-23T09:20:39.021Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4166,6 +4166,22 @@
    "hestId": 658109,
    "hest": "Numberone Kyvsgård",
    "kusk": "Mads Henriksen"
+  },
+  {
+   "dato": "2026-10-28",
+   "bane": "År",
+   "loeb": 6,
+   "hestId": 659623,
+   "hest": "Magnificent Sisu (SE)",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-10-28",
+   "bane": "År",
+   "loeb": 7,
+   "hestId": 660372,
+   "hest": "Magic Act",
+   "kusk": "Nicklas Korfitsen"
   }
  ]
 }
