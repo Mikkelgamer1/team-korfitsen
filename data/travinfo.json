@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-23T09:20:39.021Z",
+ "opdateret": "2026-10-24T08:52:36.728Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 226,
-   "sejre": 23,
+   "starter": 232,
+   "sejre": 24,
    "toer": 25,
    "treer": 31,
    "procent": 10,
-   "praemier": 1184776
+   "praemier": 1198526
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 269,
-   "sejre": 32,
+   "starter": 275,
+   "sejre": 33,
    "toer": 34,
-   "treer": 37,
+   "treer": 38,
    "procent": 12,
-   "praemier": 1469897
+   "praemier": 1487147
   },
   {
    "aar": 2025,
@@ -148,9 +148,9 @@
    "foedt": "2017-04-23",
    "far": "Ens Snapshot (US)",
    "mor": "Erica Hall (SE)",
-   "starter": 89,
+   "starter": 90,
    "placeringer": "20-14-12",
-   "praemier": 977991,
+   "praemier": 981741,
    "rekord": "14,2m 10,9ak 12,0am"
   },
   {
@@ -174,7 +174,7 @@
    "foedt": "2022-06-06",
    "far": "Varenne (IT)",
    "mor": "Beatriz",
-   "starter": 18,
+   "starter": 19,
    "placeringer": "3-3-5",
    "praemier": 183911,
    "rekord": "17,3m 12,0ak 13,4am"
@@ -187,7 +187,7 @@
    "foedt": "2022-04-05",
    "far": "Zola Boko (SE)",
    "mor": "Global Lady (SE)",
-   "starter": 18,
+   "starter": 19,
    "placeringer": "6-3-2",
    "praemier": 393434,
    "rekord": "*16,8m 14,2ak 12,6am"
@@ -200,7 +200,7 @@
    "foedt": "2022-05-22",
    "far": "Ens Snapshot (US)",
    "mor": "Erica Hall (SE)",
-   "starter": 26,
+   "starter": 27,
    "placeringer": "3-3-1",
    "praemier": 66713,
    "rekord": "22,0m 13,3ak 13,4am"
@@ -213,9 +213,9 @@
    "foedt": "2022-04-22",
    "far": "Tobin Kronos (IT)",
    "mor": "Aparte",
-   "starter": 6,
-   "placeringer": "2-1-0",
-   "praemier": 22500,
+   "starter": 7,
+   "placeringer": "3-1-0",
+   "praemier": 32500,
    "rekord": "*17,7m"
   },
   {
@@ -265,7 +265,7 @@
    "foedt": "2022-04-24",
    "far": "Wishing Stone (US)",
    "mor": "Unau (SE)",
-   "starter": 15,
+   "starter": 16,
    "placeringer": "3-3-2",
    "praemier": 227750,
    "rekord": "18,5m 13,1ak 14,2am"
@@ -753,6 +753,78 @@
   }
  ],
  "resultater": [
+  {
+   "id": "837968-653665",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 9,
+   "hestId": 653665,
+   "hest": "Leika Time",
+   "placering": "1",
+   "tid": "17,9",
+   "distance": 2180,
+   "praemie": 10000
+  },
+  {
+   "id": "837963-653672",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 7,
+   "hestId": 653672,
+   "hest": "Lafayette",
+   "placering": "0",
+   "tid": "opgag",
+   "distance": 1640,
+   "praemie": 0
+  },
+  {
+   "id": "837956-654218",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 4,
+   "hestId": 654218,
+   "hest": "Lady Trize",
+   "placering": "0",
+   "tid": "13,7a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "837956-654575",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 4,
+   "hestId": 654575,
+   "hest": "Luna Vang",
+   "placering": "0",
+   "tid": "14,2a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "837965-648097",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 3,
+   "hestId": 648097,
+   "hest": "Jane Hall (SE)",
+   "placering": "4",
+   "tid": "13,0a",
+   "distance": 1640,
+   "praemie": 3750
+  },
+  {
+   "id": "837957-654219",
+   "dato": "2026-10-23",
+   "bane": "Od",
+   "loeb": 2,
+   "hestId": 654219,
+   "hest": "Lady Zola",
+   "placering": "0",
+   "tid": "opga",
+   "distance": 2140,
+   "praemie": 0
+  },
   {
    "id": "837848-659623",
    "dato": "2026-10-16",
@@ -4103,54 +4175,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 2,
-   "hestId": 654219,
-   "hest": "Lady Zola",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 3,
-   "hestId": 648097,
-   "hest": "Jane Hall (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 4,
-   "hestId": 654218,
-   "hest": "Lady Trize",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 4,
-   "hestId": 654575,
-   "hest": "Luna Vang",
-   "kusk": "Mads Henriksen"
-  },
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 7,
-   "hestId": 653672,
-   "hest": "Lafayette",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-23",
-   "bane": "Od",
-   "loeb": 9,
-   "hestId": 653665,
-   "hest": "Leika Time",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-10-24",
    "bane": "Ål",
