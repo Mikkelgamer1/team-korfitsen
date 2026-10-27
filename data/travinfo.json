@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-26T10:06:04.315Z",
+ "opdateret": "2026-10-27T09:48:33.200Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -180,19 +180,6 @@
    "rekord": "17,3m 12,0ak 13,4am"
   },
   {
-   "id": 654219,
-   "navn": "Lady Zola",
-   "alder": 4,
-   "koen": "Hoppe",
-   "foedt": "2022-04-05",
-   "far": "Zola Boko (SE)",
-   "mor": "Global Lady (SE)",
-   "starter": 19,
-   "placeringer": "6-3-2",
-   "praemier": 393434,
-   "rekord": "*16,8m 14,2ak 12,6am"
-  },
-  {
    "id": 653672,
    "navn": "Lafayette",
    "alder": 4,
@@ -217,19 +204,6 @@
    "placeringer": "3-1-0",
    "praemier": 32500,
    "rekord": "*17,7m"
-  },
-  {
-   "id": 654579,
-   "navn": "Level Up",
-   "alder": 4,
-   "koen": "Hoppe",
-   "foedt": "2022-06-20",
-   "far": "Trixton (US)",
-   "mor": "Noble Conch",
-   "starter": 26,
-   "placeringer": "1-2-3",
-   "praemier": 54600,
-   "rekord": "18,0k *17,8m 16,2ak 15,9am"
   },
   {
    "id": 654089,
@@ -850,18 +824,6 @@
    "praemie": 2500
   },
   {
-   "id": "837861-649115",
-   "dato": "2026-10-16",
-   "bane": "Ål",
-   "loeb": 4,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "placering": "2",
-   "tid": "15,9a",
-   "distance": 2140,
-   "praemie": 5000
-  },
-  {
    "id": "837861-654579",
    "dato": "2026-10-16",
    "bane": "Ål",
@@ -872,6 +834,18 @@
    "tid": "16,3a",
    "distance": 2140,
    "praemie": 0
+  },
+  {
+   "id": "837861-649115",
+   "dato": "2026-10-16",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "2",
+   "tid": "15,9a",
+   "distance": 2140,
+   "praemie": 5000
   },
   {
    "id": "837853-656722",
@@ -1054,18 +1028,6 @@
    "praemie": 10000
   },
   {
-   "id": "837531-654579",
-   "dato": "2026-10-01",
-   "bane": "Ål",
-   "loeb": 6,
-   "hestId": 654579,
-   "hest": "Level Up",
-   "placering": "d",
-   "tid": "g",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "837531-661209",
    "dato": "2026-10-01",
    "bane": "Ål",
@@ -1074,6 +1036,18 @@
    "hest": "Always Be Thyself (SE)",
    "placering": "0",
    "tid": "19,1g",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "837531-654579",
+   "dato": "2026-10-01",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 654579,
+   "hest": "Level Up",
+   "placering": "d",
+   "tid": "g",
    "distance": 2140,
    "praemie": 0
   },
@@ -1210,18 +1184,6 @@
    "praemie": 5000
   },
   {
-   "id": "837340-654579",
-   "dato": "2026-09-18",
-   "bane": "Ål",
-   "loeb": 7,
-   "hestId": 654579,
-   "hest": "Level Up",
-   "placering": "2",
-   "tid": "18,7",
-   "distance": 2140,
-   "praemie": 10000
-  },
-  {
    "id": "837340-661209",
    "dato": "2026-09-18",
    "bane": "Ål",
@@ -1232,6 +1194,18 @@
    "tid": "20,1",
    "distance": 2140,
    "praemie": 0
+  },
+  {
+   "id": "837340-654579",
+   "dato": "2026-09-18",
+   "bane": "Ål",
+   "loeb": 7,
+   "hestId": 654579,
+   "hest": "Level Up",
+   "placering": "2",
+   "tid": "18,7",
+   "distance": 2140,
+   "praemie": 10000
   },
   {
    "id": "837338-654219",
@@ -1330,6 +1304,18 @@
    "praemie": 500
   },
   {
+   "id": "837122-654579",
+   "dato": "2026-09-05",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 654579,
+   "hest": "Level Up",
+   "placering": "5",
+   "tid": "16,9a",
+   "distance": 2140,
+   "praemie": 2000
+  },
+  {
    "id": "837122-655672",
    "dato": "2026-09-05",
    "bane": "Ål",
@@ -1352,18 +1338,6 @@
    "tid": "16,4a",
    "distance": 2140,
    "praemie": 10000
-  },
-  {
-   "id": "837122-654579",
-   "dato": "2026-09-05",
-   "bane": "Ål",
-   "loeb": 2,
-   "hestId": 654579,
-   "hest": "Level Up",
-   "placering": "5",
-   "tid": "16,9a",
-   "distance": 2140,
-   "praemie": 2000
   },
   {
    "id": "837117-662079",
@@ -1510,18 +1484,6 @@
    "praemie": 10000
   },
   {
-   "id": "836630-653665",
-   "dato": "2026-08-13",
-   "bane": "Ål",
-   "loeb": 7,
-   "hestId": 653665,
-   "hest": "Leika Time",
-   "placering": "0",
-   "tid": "22,9g",
-   "distance": 2160,
-   "praemie": 0
-  },
-  {
    "id": "836630-660372",
    "dato": "2026-08-13",
    "bane": "Ål",
@@ -1531,6 +1493,18 @@
    "placering": "0",
    "tid": "21,4g",
    "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "836630-653665",
+   "dato": "2026-08-13",
+   "bane": "Ål",
+   "loeb": 7,
+   "hestId": 653665,
+   "hest": "Leika Time",
+   "placering": "0",
+   "tid": "22,9g",
+   "distance": 2160,
    "praemie": 0
   },
   {
@@ -1858,18 +1832,6 @@
    "praemie": 3500
   },
   {
-   "id": "835860-649115",
-   "dato": "2026-07-09",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "placering": "0",
-   "tid": "14,8a",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "835860-653672",
    "dato": "2026-07-09",
    "bane": "Ål",
@@ -1878,6 +1840,18 @@
    "hest": "Lafayette",
    "placering": "0",
    "tid": "14,5a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "835860-649115",
+   "dato": "2026-07-09",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "0",
+   "tid": "14,8a",
    "distance": 2140,
    "praemie": 0
   },
@@ -2110,18 +2084,6 @@
    "praemie": 0
   },
   {
-   "id": "835404-656722",
-   "dato": "2026-06-12",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 656722,
-   "hest": "Magne",
-   "placering": "3",
-   "tid": "17,3a",
-   "distance": 2140,
-   "praemie": 3500
-  },
-  {
    "id": "835404-656437",
    "dato": "2026-06-12",
    "bane": "Ål",
@@ -2132,6 +2094,18 @@
    "tid": "19,1a",
    "distance": 2140,
    "praemie": 0
+  },
+  {
+   "id": "835404-656722",
+   "dato": "2026-06-12",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656722,
+   "hest": "Magne",
+   "placering": "3",
+   "tid": "17,3a",
+   "distance": 2140,
+   "praemie": 3500
   },
   {
    "id": "835376-651683",
@@ -2182,16 +2156,16 @@
    "praemie": 2000
   },
   {
-   "id": "835259-654579",
+   "id": "835259-654218",
    "dato": "2026-06-04",
    "bane": "År",
    "loeb": 8,
-   "hestId": 654579,
-   "hest": "Level Up",
-   "placering": "0",
-   "tid": "17,0a",
+   "hestId": 654218,
+   "hest": "Lady Trize",
+   "placering": "4",
+   "tid": "16,2a",
    "distance": 1800,
-   "praemie": 0
+   "praemie": 3000
   },
   {
    "id": "835259-654575",
@@ -2206,16 +2180,16 @@
    "praemie": 0
   },
   {
-   "id": "835259-654218",
+   "id": "835259-654579",
    "dato": "2026-06-04",
    "bane": "År",
    "loeb": 8,
-   "hestId": 654218,
-   "hest": "Lady Trize",
-   "placering": "4",
-   "tid": "16,2a",
+   "hestId": 654579,
+   "hest": "Level Up",
+   "placering": "0",
+   "tid": "17,0a",
    "distance": 1800,
-   "praemie": 3000
+   "praemie": 0
   },
   {
    "id": "835271-649481",
@@ -2290,18 +2264,6 @@
    "praemie": 0
   },
   {
-   "id": "835277-649115",
-   "dato": "2026-06-03",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "placering": "0",
-   "tid": "16,4ag",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "835277-656860",
    "dato": "2026-06-03",
    "bane": "Ål",
@@ -2312,6 +2274,18 @@
    "tid": "16,3a",
    "distance": 2140,
    "praemie": 2000
+  },
+  {
+   "id": "835277-649115",
+   "dato": "2026-06-03",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "0",
+   "tid": "16,4ag",
+   "distance": 2140,
+   "praemie": 0
   },
   {
    "id": "835190-656724",
@@ -2662,18 +2636,6 @@
    "praemie": 15000
   },
   {
-   "id": "834492-649481",
-   "dato": "2026-05-01",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 649481,
-   "hest": "Just Time",
-   "placering": "2",
-   "tid": "15,7a",
-   "distance": 2140,
-   "praemie": 5000
-  },
-  {
    "id": "834492-649115",
    "dato": "2026-05-01",
    "bane": "Ål",
@@ -2684,6 +2646,18 @@
    "tid": "15,4a",
    "distance": 2140,
    "praemie": 10000
+  },
+  {
+   "id": "834492-649481",
+   "dato": "2026-05-01",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649481,
+   "hest": "Just Time",
+   "placering": "2",
+   "tid": "15,7a",
+   "distance": 2140,
+   "praemie": 5000
   },
   {
    "id": "834488-656724",
@@ -2818,18 +2792,6 @@
    "praemie": 10000
   },
   {
-   "id": "834108-656433",
-   "dato": "2026-04-16",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 656433,
-   "hest": "Mustang Kini",
-   "placering": "d",
-   "tid": "ga",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "834108-656762",
    "dato": "2026-04-16",
    "bane": "Ål",
@@ -2838,6 +2800,18 @@
    "hest": "Madame X",
    "placering": "0",
    "tid": "18,7a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "834108-656433",
+   "dato": "2026-04-16",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 656433,
+   "hest": "Mustang Kini",
+   "placering": "d",
+   "tid": "ga",
    "distance": 2140,
    "praemie": 0
   },
@@ -2914,18 +2888,6 @@
    "praemie": 5000
   },
   {
-   "id": "833961-656534",
-   "dato": "2026-04-06",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 656534,
-   "hest": "Malik",
-   "placering": "0",
-   "tid": "21,8g",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "833961-660372",
    "dato": "2026-04-06",
    "bane": "Ål",
@@ -2934,6 +2896,18 @@
    "hest": "Magic Act",
    "placering": "0",
    "tid": "21,9g",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "833961-656534",
+   "dato": "2026-04-06",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656534,
+   "hest": "Malik",
+   "placering": "0",
+   "tid": "21,8g",
    "distance": 2140,
    "praemie": 0
   },
@@ -3022,18 +2996,6 @@
    "praemie": 1500
   },
   {
-   "id": "833857-649481",
-   "dato": "2026-03-30",
-   "bane": "Ål",
-   "loeb": 4,
-   "hestId": 649481,
-   "hest": "Just Time",
-   "placering": "2",
-   "tid": "16,4a",
-   "distance": 2140,
-   "praemie": 5000
-  },
-  {
    "id": "833857-649115",
    "dato": "2026-03-30",
    "bane": "Ål",
@@ -3044,6 +3006,18 @@
    "tid": "17,9ag",
    "distance": 2140,
    "praemie": 0
+  },
+  {
+   "id": "833857-649481",
+   "dato": "2026-03-30",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 649481,
+   "hest": "Just Time",
+   "placering": "2",
+   "tid": "16,4a",
+   "distance": 2140,
+   "praemie": 5000
   },
   {
    "id": "833856-654219",
@@ -3406,18 +3380,6 @@
    "praemie": 2500
   },
   {
-   "id": "833105-644571",
-   "dato": "2026-01-19",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 644571,
-   "hest": "Garrido",
-   "placering": "d",
-   "tid": "ga",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "833105-649941",
    "dato": "2026-01-19",
    "bane": "Ål",
@@ -3428,6 +3390,18 @@
    "tid": "14,9a",
    "distance": 2140,
    "praemie": 15000
+  },
+  {
+   "id": "833105-644571",
+   "dato": "2026-01-19",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 644571,
+   "hest": "Garrido",
+   "placering": "d",
+   "tid": "ga",
+   "distance": 2140,
+   "praemie": 0
   },
   {
    "id": "833098-655672",
@@ -3514,18 +3488,6 @@
    "praemie": 0
   },
   {
-   "id": "832999-649115",
-   "dato": "2026-01-03",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "placering": "3",
-   "tid": "16,3a",
-   "distance": 1640,
-   "praemie": 3500
-  },
-  {
    "id": "832999-655672",
    "dato": "2026-01-03",
    "bane": "Ål",
@@ -3536,6 +3498,18 @@
    "tid": "g4a",
    "distance": 1640,
    "praemie": 0
+  },
+  {
+   "id": "832999-649115",
+   "dato": "2026-01-03",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "3",
+   "tid": "16,3a",
+   "distance": 1640,
+   "praemie": 3500
   },
   {
    "id": "832924-660272",
@@ -3610,18 +3584,6 @@
    "praemie": 3000
   },
   {
-   "id": "832947-648097",
-   "dato": "2025-12-29",
-   "bane": "Sk",
-   "loeb": 6,
-   "hestId": 648097,
-   "hest": "Jane Hall (SE)",
-   "placering": "2",
-   "tid": "13,5a",
-   "distance": 2060,
-   "praemie": 25000
-  },
-  {
    "id": "832947-654749",
    "dato": "2025-12-29",
    "bane": "Sk",
@@ -3632,6 +3594,18 @@
    "tid": "14,6a",
    "distance": 2060,
    "praemie": 3000
+  },
+  {
+   "id": "832947-648097",
+   "dato": "2025-12-29",
+   "bane": "Sk",
+   "loeb": 6,
+   "hestId": 648097,
+   "hest": "Jane Hall (SE)",
+   "placering": "2",
+   "tid": "13,5a",
+   "distance": 2060,
+   "praemie": 25000
   },
   {
    "id": "832921-656187",
@@ -3670,18 +3644,6 @@
    "praemie": 3150
   },
   {
-   "id": "832887-656724",
-   "dato": "2025-12-24",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 656724,
-   "hest": "Madame",
-   "placering": "0",
-   "tid": "23,0g",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "832887-656929",
    "dato": "2025-12-24",
    "bane": "Ål",
@@ -3692,6 +3654,18 @@
    "tid": "17,7",
    "distance": 2140,
    "praemie": 20000
+  },
+  {
+   "id": "832887-656724",
+   "dato": "2025-12-24",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 656724,
+   "hest": "Madame",
+   "placering": "0",
+   "tid": "23,0g",
+   "distance": 2140,
+   "praemie": 0
   },
   {
    "id": "832892-649115",
@@ -3838,18 +3812,6 @@
    "praemie": 3000
   },
   {
-   "id": "832751-652157",
-   "dato": "2025-12-14",
-   "bane": "Ål",
-   "loeb": 2,
-   "hestId": 652157,
-   "hest": "Key West",
-   "placering": "7",
-   "tid": "18,3a",
-   "distance": 2140,
-   "praemie": 2000
-  },
-  {
    "id": "832751-654579",
    "dato": "2025-12-14",
    "bane": "Ål",
@@ -3860,6 +3822,18 @@
    "tid": "17,0a",
    "distance": 2140,
    "praemie": 5000
+  },
+  {
+   "id": "832751-652157",
+   "dato": "2025-12-14",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 652157,
+   "hest": "Key West",
+   "placering": "7",
+   "tid": "18,3a",
+   "distance": 2140,
+   "praemie": 2000
   },
   {
    "id": "832752-653672",
@@ -3958,18 +3932,6 @@
    "praemie": 3750
   },
   {
-   "id": "832672-656534",
-   "dato": "2025-12-07",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 656534,
-   "hest": "Malik",
-   "placering": "d",
-   "tid": "g",
-   "distance": 2140,
-   "praemie": 0
-  },
-  {
    "id": "832672-656437",
    "dato": "2025-12-07",
    "bane": "Ål",
@@ -3980,6 +3942,18 @@
    "tid": "19,1",
    "distance": 2140,
    "praemie": 6000
+  },
+  {
+   "id": "832672-656534",
+   "dato": "2025-12-07",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656534,
+   "hest": "Malik",
+   "placering": "d",
+   "tid": "g",
+   "distance": 2140,
+   "praemie": 0
   },
   {
    "id": "832660-660272",
