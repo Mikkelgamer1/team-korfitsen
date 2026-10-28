@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-27T09:48:33.200Z",
+ "opdateret": "2026-10-28T10:34:16.284Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4163,6 +4163,54 @@
    "loeb": 7,
    "hestId": 660372,
    "hest": "Magic Act",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "kusk": "Mads Henriksen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656722,
+   "hest": "Magne",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 653598,
+   "hest": "Lucky Choice",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 658818,
+   "hest": "Noel",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 91,
+   "hestId": 658811,
+   "hest": "Nicklas Vang",
    "kusk": "Nicklas Korfitsen"
   }
  ]
