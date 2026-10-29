@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-28T10:34:16.284Z",
+ "opdateret": "2026-10-29T10:53:17.569Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 232,
-   "sejre": 24,
+   "starter": 234,
+   "sejre": 26,
    "toer": 25,
    "treer": 31,
-   "procent": 10,
-   "praemier": 1198526
+   "procent": 11,
+   "praemier": 1218526
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 275,
-   "sejre": 33,
+   "starter": 278,
+   "sejre": 35,
    "toer": 34,
    "treer": 38,
-   "procent": 12,
-   "praemier": 1487147
+   "procent": 13,
+   "praemier": 1507147
   },
   {
    "aar": 2025,
@@ -265,10 +265,10 @@
    "foedt": "2023-03-14",
    "far": "Galius (FR)",
    "mor": "Face My Act (NO)",
-   "starter": 5,
-   "placeringer": "0-1-0",
-   "praemier": 6000,
-   "rekord": "19,7m 19,9am"
+   "starter": 6,
+   "placeringer": "1-1-0",
+   "praemier": 16000,
+   "rekord": "*19,7k 19,7m 19,9am"
   },
   {
    "id": 656722,
@@ -291,9 +291,9 @@
    "foedt": "2022-04-09",
    "far": "Walner (CA)",
    "mor": "Fabulous Sisu (NO)",
-   "starter": 23,
-   "placeringer": "2-8-2",
-   "praemier": 251839,
+   "starter": 24,
+   "placeringer": "3-8-2",
+   "praemier": 261839,
    "rekord": "14,4m 12,4ak 13,0am"
   },
   {
@@ -727,6 +727,30 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838011-660372",
+   "dato": "2026-10-28",
+   "bane": "År",
+   "loeb": 7,
+   "hestId": 660372,
+   "hest": "Magic Act",
+   "placering": "1",
+   "tid": "19,7",
+   "distance": 1820,
+   "praemie": 10000
+  },
+  {
+   "id": "838023-659623",
+   "dato": "2026-10-28",
+   "bane": "År",
+   "loeb": 6,
+   "hestId": 659623,
+   "hest": "Magnificent Sisu (SE)",
+   "placering": "1",
+   "tid": "14,2a",
+   "distance": 1800,
+   "praemie": 10000
+  },
   {
    "id": "837968-653665",
    "dato": "2026-10-23",
@@ -4149,22 +4173,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-10-28",
-   "bane": "År",
-   "loeb": 6,
-   "hestId": 659623,
-   "hest": "Magnificent Sisu (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-10-28",
-   "bane": "År",
-   "loeb": 7,
-   "hestId": 660372,
-   "hest": "Magic Act",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-02",
    "bane": "Ål",
