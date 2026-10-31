@@ -12,7 +12,7 @@ export const SITE = {
   postnr: '9400',
   by: 'Nørresundby',
   sted: 'Vang Hovedgaard',
-  facebook: '', // ← indsæt Facebook-sidens adresse, så vises feedet på forsiden
+  facebook: 'https://www.facebook.com/profile.php?id=61569540068591', // opslag vises som kort, når FB_SIDE/FB_TOKEN er sat i GitHub
   instagram: 'https://www.instagram.com/teamkorfitsen/',
   instagramNavn: '@teamkorfitsen',
   travinfo: 'https://travinfo.dk/licenseholder-tabs/508510',
@@ -458,16 +458,14 @@ const foelg = (fb = []) => `
     <div>
       <p class="etiket" data-vis>Følg med</p>
       <h2 data-vis style="--i:1">Hverdagen <em>på ${SITE.sted}.</em></h2>
-      <p data-vis style="--i:2">Sejre, startdage og livet i stalden deles løbende${fb.length ? ' – her er de seneste opslag fra Facebook' : ' på Instagram'}.</p>
+      <p data-vis style="--i:2">Sejre, startdage og livet i stalden deles løbende${fb.length ? ' – her er de seneste opslag fra Facebook' : ' på Instagram og Facebook'}.</p>
     </div>
     <div class="foelg__links" data-vis style="--i:2">
       <a class="some" href="${SITE.instagram}" target="_blank" rel="noopener"><span>Instagram</span><b>${SITE.instagramNavn}</b>${ud}${nyFane}</a>
       ${SITE.facebook ? `<a class="some" href="${SITE.facebook}" target="_blank" rel="noopener"><span>Facebook</span><b>${SITE.navn}</b>${ud}${nyFane}</a>` : ''}
-      ${SITE.facebook && !fb.length ? `<div class="fb" data-fb="${SITE.facebook}">
-        <button class="knap knap--kant" type="button">Vis de seneste opslag ${pil}</button>
-        <p class="fb__note">Opslagene hentes fra Facebook og sætter cookies derfra.</p>
-      </div>` : ''}
     </div>
+    <!-- Ingen Facebook-indlejring: Facebook viser kun navn og profilbillede i sideplugin'et for denne side.
+         Opslagene vises som kort ovenfor, når FB_SIDE/FB_TOKEN er sat i GitHub (se README). -->
   </div>
   ${fb.length ? `<div class="wrap">${fbKort(fb)}
   </div>` : ''}
@@ -913,7 +911,7 @@ export function sider(data, { v, idag, kort }) {
     })),
     side('404.html', () => ({
       titel: `Siden findes ikke | ${SITE.navn}`,
-      beskrivelse: 'Siden findes ikke.',
+      beskrivelse: `Siden findes ikke. Gå til forsiden for ${SITE.navn} – travtræner Nicklas Korfitsen på Vang Hovedgaard ved Aalborg.`,
       noindex: true,
       indhold: ikkeFundet(),
     })),
