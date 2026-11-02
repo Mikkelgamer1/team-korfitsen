@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-01T11:15:49.861Z",
+ "opdateret": "2026-11-02T12:22:17.626Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 234,
+   "starter": 235,
    "sejre": 26,
    "toer": 25,
    "treer": 31,
    "procent": 11,
-   "praemier": 1218526
+   "praemier": 1220094
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 278,
+   "starter": 279,
    "sejre": 35,
    "toer": 34,
    "treer": 38,
    "procent": 13,
-   "praemier": 1507147
+   "praemier": 1508715
   },
   {
    "aar": 2025,
@@ -395,9 +395,9 @@
    "foedt": "2023-03-20",
    "far": "Calgary Games (SE)",
    "mor": "Chin Chin (NO)",
-   "starter": 8,
+   "starter": 9,
    "placeringer": "2-4-0",
-   "praemier": 75000,
+   "praemier": 76568,
    "rekord": "17,4m *14,5am"
   },
   {
@@ -727,6 +727,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838164-657241",
+   "dato": "2026-10-31",
+   "bane": "Bj",
+   "loeb": 7,
+   "hestId": 657241,
+   "hest": "Moor Jeting",
+   "placering": "0",
+   "tid": "16,4a",
+   "distance": 2100,
+   "praemie": 1568
+  },
   {
    "id": "838011-660372",
    "dato": "2026-10-28",
