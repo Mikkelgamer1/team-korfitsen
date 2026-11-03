@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-02T12:22:17.626Z",
+ "opdateret": "2026-11-03T11:55:40.831Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 235,
-   "sejre": 26,
+   "starter": 240,
+   "sejre": 27,
    "toer": 25,
-   "treer": 31,
+   "treer": 32,
    "procent": 11,
-   "praemier": 1220094
+   "praemier": 1236094
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 279,
-   "sejre": 35,
+   "starter": 283,
+   "sejre": 36,
    "toer": 34,
-   "treer": 38,
+   "treer": 39,
    "procent": 13,
-   "praemier": 1508715
+   "praemier": 1524715
   },
   {
    "aar": 2025,
@@ -213,10 +213,10 @@
    "foedt": "2022-06-10",
    "far": "Gentle Tilly (SE)",
    "mor": "Saxwill Money",
-   "starter": 14,
+   "starter": 15,
    "placeringer": "1-0-1",
    "praemier": 16250,
-   "rekord": "18,9m *15,4ak 18,5am"
+   "rekord": "18,9m *15,4ak 17,9am"
   },
   {
    "id": 653598,
@@ -226,9 +226,9 @@
    "foedt": "2022-05-15",
    "far": "Wishing Stone (US)",
    "mor": "Nightingale Jaycee (DE)",
-   "starter": 14,
+   "starter": 15,
    "placeringer": "2-3-1",
-   "praemier": 61500,
+   "praemier": 64000,
    "rekord": "20,6m 14,0ak 15,9am 14,8al"
   },
   {
@@ -252,10 +252,10 @@
    "foedt": "2023-05-27",
    "far": "Great Challenger (US)",
    "mor": "Jula Princess (SE)",
-   "starter": 3,
-   "placeringer": "0-0-0",
-   "praemier": 2250,
-   "rekord": "18,6m 19,2ak 18,7am"
+   "starter": 4,
+   "placeringer": "0-0-1",
+   "praemier": 5750,
+   "rekord": "18,4m 19,2ak 18,7am"
   },
   {
    "id": 660372,
@@ -278,9 +278,9 @@
    "foedt": "2023-04-24",
    "far": "Donato Hanover (US)",
    "mor": "Magna Vang",
-   "starter": 5,
-   "placeringer": "2-0-2",
-   "praemier": 27000,
+   "starter": 6,
+   "placeringer": "3-0-2",
+   "praemier": 37000,
    "rekord": "17,1am"
   },
   {
@@ -512,10 +512,10 @@
    "foedt": "2024-05-09",
    "far": "Maharajah (SE)",
    "mor": "Prapai R (NO)",
-   "starter": 1,
+   "starter": 2,
    "placeringer": "0-1-0",
    "praemier": 5000,
-   "rekord": "22,0am"
+   "rekord": "25,1m 22,0am"
   },
   {
    "id": 658118,
@@ -727,6 +727,66 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838074-656762",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "placering": "3",
+   "tid": "18,4",
+   "distance": 2140,
+   "praemie": 3500
+  },
+  {
+   "id": "838072-658818",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 658818,
+   "hest": "Noel",
+   "placering": "0",
+   "tid": "25,1g",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "838077-653598",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 653598,
+   "hest": "Lucky Choice",
+   "placering": "4",
+   "tid": "15,3a",
+   "distance": 1640,
+   "praemie": 2500
+  },
+  {
+   "id": "838076-654089",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "placering": "0",
+   "tid": "17,9a",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "838076-656722",
+   "dato": "2026-11-02",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 656722,
+   "hest": "Magne",
+   "placering": "1",
+   "tid": "17,4a",
+   "distance": 2140,
+   "praemie": 10000
+  },
   {
    "id": "838164-657241",
    "dato": "2026-10-31",
@@ -4186,51 +4246,27 @@
  ],
  "kommende": [
   {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 654089,
-   "hest": "Lisbeth M",
-   "kusk": "Mads Henriksen"
-  },
-  {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 656722,
-   "hest": "Magne",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-02",
-   "bane": "Ål",
+   "dato": "2026-11-08",
+   "bane": "Ch",
    "loeb": 3,
-   "hestId": 653598,
-   "hest": "Lucky Choice",
+   "hestId": 658880,
+   "hest": "Nipz",
    "kusk": "Nicklas Korfitsen"
   },
   {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 658818,
-   "hest": "Noel",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 8,
+   "hestId": 653672,
+   "hest": "Lafayette",
    "kusk": "Nicklas Korfitsen"
   },
   {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 6,
-   "hestId": 656762,
-   "hest": "Madame X",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-02",
-   "bane": "Ål",
-   "loeb": 91,
-   "hestId": 658811,
-   "hest": "Nicklas Vang",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 9,
+   "hestId": 648097,
+   "hest": "Jane Hall (SE)",
    "kusk": "Nicklas Korfitsen"
   }
  ]
