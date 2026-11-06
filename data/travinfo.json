@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-05T12:18:30.651Z",
+ "opdateret": "2026-11-06T12:05:35.120Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4267,6 +4267,30 @@
    "loeb": 9,
    "hestId": 648097,
    "hest": "Jane Hall (SE)",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 649481,
+   "hest": "Just Time",
    "kusk": "Nicklas Korfitsen"
   }
  ]
