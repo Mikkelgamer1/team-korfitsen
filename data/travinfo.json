@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-08T11:16:52.399Z",
+ "opdateret": "2026-11-10T12:38:03.951Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 240,
+   "starter": 243,
    "sejre": 27,
    "toer": 25,
-   "treer": 32,
+   "treer": 33,
    "procent": 11,
-   "praemier": 1236094
+   "praemier": 1242344
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 283,
+   "starter": 287,
    "sejre": 36,
    "toer": 34,
-   "treer": 39,
+   "treer": 41,
    "procent": 13,
-   "praemier": 1524715
+   "praemier": 1537215
   },
   {
    "aar": 2025,
@@ -115,6 +115,19 @@
    "rekord": "17,0m 15,9ak 15,3am"
   },
   {
+   "id": 661303,
+   "navn": "Athos Diablo (SE)",
+   "alder": 1,
+   "koen": "Hingst",
+   "foedt": "2025-05-13",
+   "far": "Calgary Games (SE)",
+   "mor": "Honey Diablo (SE)",
+   "starter": 0,
+   "placeringer": "0-0-0",
+   "praemier": 0,
+   "rekord": ""
+  },
+  {
    "id": 644571,
    "navn": "Garrido",
    "alder": 8,
@@ -148,7 +161,7 @@
    "foedt": "2017-04-23",
    "far": "Ens Snapshot (US)",
    "mor": "Erica Hall (SE)",
-   "starter": 90,
+   "starter": 91,
    "placeringer": "20-14-12",
    "praemier": 981741,
    "rekord": "14,2m 10,9ak 12,0am"
@@ -187,7 +200,7 @@
    "foedt": "2022-05-22",
    "far": "Ens Snapshot (US)",
    "mor": "Erica Hall (SE)",
-   "starter": 27,
+   "starter": 28,
    "placeringer": "3-3-1",
    "praemier": 66713,
    "rekord": "22,0m 13,3ak 13,4am"
@@ -486,10 +499,10 @@
    "foedt": "2024-06-16",
    "far": "Maharajah (SE)",
    "mor": "Vilavaldi",
-   "starter": 3,
-   "placeringer": "0-0-3",
-   "praemier": 60500,
-   "rekord": "17,8ak 19,3am"
+   "starter": 4,
+   "placeringer": "0-0-4",
+   "praemier": 66750,
+   "rekord": "17,8ak 16,9am"
   },
   {
    "id": 658117,
@@ -727,6 +740,42 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838149-648097",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 9,
+   "hestId": 648097,
+   "hest": "Jane Hall (SE)",
+   "placering": "0",
+   "tid": "11,0a",
+   "distance": 1600,
+   "praemie": 0
+  },
+  {
+   "id": "838150-653672",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 8,
+   "hestId": 653672,
+   "hest": "Lafayette",
+   "placering": "d",
+   "tid": "gag",
+   "distance": 2000,
+   "praemie": 0
+  },
+  {
+   "id": "838154-658880",
+   "dato": "2026-11-08",
+   "bane": "Ch",
+   "loeb": 3,
+   "hestId": 658880,
+   "hest": "Nipz",
+   "placering": "3",
+   "tid": "16,9a",
+   "distance": 2000,
+   "praemie": 6250
+  },
   {
    "id": "838074-656762",
    "dato": "2026-11-02",
@@ -4246,30 +4295,6 @@
  ],
  "kommende": [
   {
-   "dato": "2026-11-08",
-   "bane": "Ch",
-   "loeb": 3,
-   "hestId": 658880,
-   "hest": "Nipz",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-08",
-   "bane": "Ch",
-   "loeb": 8,
-   "hestId": 653672,
-   "hest": "Lafayette",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-08",
-   "bane": "Ch",
-   "loeb": 9,
-   "hestId": 648097,
-   "hest": "Jane Hall (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
    "dato": "2026-11-11",
    "bane": "Ål",
    "loeb": 1,
@@ -4291,6 +4316,14 @@
    "loeb": 5,
    "hestId": 649481,
    "hest": "Just Time",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-13",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 656762,
+   "hest": "Madame X",
    "kusk": "Nicklas Korfitsen"
   }
  ]
