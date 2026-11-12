@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-11T11:52:19.955Z",
+ "opdateret": "2026-11-12T12:41:55.044Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 243,
+   "starter": 246,
    "sejre": 27,
    "toer": 25,
    "treer": 33,
    "procent": 11,
-   "praemier": 1242344
+   "praemier": 1246844
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 287,
+   "starter": 291,
    "sejre": 36,
    "toer": 34,
    "treer": 41,
-   "procent": 13,
-   "praemier": 1537215
+   "procent": 12,
+   "praemier": 1541715
   },
   {
    "aar": 2025,
@@ -148,9 +148,9 @@
    "foedt": "2020-05-14",
    "far": "Orlando Vici (FR)",
    "mor": "Erica Hall (SE)",
-   "starter": 31,
+   "starter": 32,
    "placeringer": "2-4-6",
-   "praemier": 63500,
+   "praemier": 66000,
    "rekord": "17,7m 14,8ak 14,8am"
   },
   {
@@ -174,9 +174,9 @@
    "foedt": "2020-05-16",
    "far": "Great Challenger (US)",
    "mor": "What A Time",
-   "starter": 27,
+   "starter": 28,
    "placeringer": "2-6-7",
-   "praemier": 91950,
+   "praemier": 93950,
    "rekord": "24,9k 16,0m 14,7ak 15,0am 19,9al"
   },
   {
@@ -226,7 +226,7 @@
    "foedt": "2022-06-10",
    "far": "Gentle Tilly (SE)",
    "mor": "Saxwill Money",
-   "starter": 15,
+   "starter": 16,
    "placeringer": "1-0-1",
    "praemier": 16250,
    "rekord": "18,9m *15,4ak 17,9am"
@@ -740,6 +740,42 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838214-649481",
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 649481,
+   "hest": "Just Time",
+   "placering": "5",
+   "tid": "15,7a",
+   "distance": 2140,
+   "praemie": 2000
+  },
+  {
+   "id": "838215-649115",
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "4",
+   "tid": "16,7a",
+   "distance": 2140,
+   "praemie": 2500
+  },
+  {
+   "id": "838212-654089",
+   "dato": "2026-11-11",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "placering": "0",
+   "tid": "17,9a",
+   "distance": 2140,
+   "praemie": 0
+  },
   {
    "id": "838149-648097",
    "dato": "2026-11-08",
@@ -4294,30 +4330,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-11",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 654089,
-   "hest": "Lisbeth M",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-11",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-11",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 649481,
-   "hest": "Just Time",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-13",
    "bane": "Sk",
