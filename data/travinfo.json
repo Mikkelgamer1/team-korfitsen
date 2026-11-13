@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-12T12:41:55.044Z",
+ "opdateret": "2026-11-13T12:11:34.068Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4334,6 +4334,46 @@
    "dato": "2026-11-13",
    "bane": "Sk",
    "loeb": 2,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 653598,
+   "hest": "Lucky Choice",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 656722,
+   "hest": "Magne",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 662079,
+   "hest": "Occhio Boko (SE)",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 7,
    "hestId": 656762,
    "hest": "Madame X",
    "kusk": "Nicklas Korfitsen"
