@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-13T12:11:34.068Z",
+ "opdateret": "2026-11-14T11:27:25.325Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 246,
+   "starter": 247,
    "sejre": 27,
    "toer": 25,
-   "treer": 33,
+   "treer": 34,
    "procent": 11,
-   "praemier": 1246844
+   "praemier": 1249844
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 291,
+   "starter": 293,
    "sejre": 36,
    "toer": 34,
-   "treer": 41,
+   "treer": 42,
    "procent": 12,
-   "praemier": 1541715
+   "praemier": 1544715
   },
   {
    "aar": 2025,
@@ -265,10 +265,10 @@
    "foedt": "2023-05-27",
    "far": "Great Challenger (US)",
    "mor": "Jula Princess (SE)",
-   "starter": 4,
-   "placeringer": "0-0-1",
-   "praemier": 5750,
-   "rekord": "18,4m 19,2ak 18,7am"
+   "starter": 5,
+   "placeringer": "0-0-2",
+   "praemier": 8750,
+   "rekord": "18,4m 19,2ak 17,4am"
   },
   {
    "id": 660372,
@@ -740,6 +740,18 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838259-656762",
+   "dato": "2026-11-13",
+   "bane": "Sk",
+   "loeb": 2,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "placering": "3",
+   "tid": "17,4a",
+   "distance": 2060,
+   "praemie": 3000
+  },
   {
    "id": "838214-649481",
    "dato": "2026-11-11",
@@ -4330,14 +4342,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-13",
-   "bane": "Sk",
-   "loeb": 2,
-   "hestId": 656762,
-   "hest": "Madame X",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-18",
    "bane": "Ål",
