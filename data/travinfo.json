@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-15T11:56:31.021Z",
+ "opdateret": "2026-11-16T12:43:36.594Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -336,19 +336,6 @@
    "rekord": "17,1m 15,2ak 16,2am"
   },
   {
-   "id": 656275,
-   "navn": "Michael Learnsrock",
-   "alder": 3,
-   "koen": "Vallak",
-   "foedt": "2023-05-03",
-   "far": "Classichap (US)",
-   "mor": "Ashleigh's Legacy (US)",
-   "starter": 2,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
    "id": 656310,
    "navn": "Mind Games",
    "alder": 3,
@@ -427,19 +414,6 @@
    "rekord": "19,1m 18,0ak 18,1am"
   },
   {
-   "id": 656433,
-   "navn": "Mustang Kini",
-   "alder": 3,
-   "koen": "Vallak",
-   "foedt": "2023-05-17",
-   "far": "Propulsion (US)",
-   "mor": "Camble Flame",
-   "starter": 1,
-   "placeringer": "0-0-0",
-   "praemier": 0,
-   "rekord": ""
-  },
-  {
    "id": 658769,
    "navn": "Netflix",
    "alder": 2,
@@ -456,7 +430,7 @@
    "id": 658812,
    "navn": "New Born Vang",
    "alder": 2,
-   "koen": "Hingst",
+   "koen": "Vallak",
    "foedt": "2024-04-21",
    "far": "Wishing Stone (US)",
    "mor": "Unau (SE)",
