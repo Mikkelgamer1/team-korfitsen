@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-16T12:43:36.594Z",
+ "opdateret": "2026-11-17T13:22:55.437Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4354,6 +4354,22 @@
    "loeb": 7,
    "hestId": 656762,
    "hest": "Madame X",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 2,
+   "hestId": 653672,
+   "hest": "Lafayette",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 3,
+   "hestId": 653665,
+   "hest": "Leika Time",
    "kusk": "Nicklas Korfitsen"
   }
  ]
