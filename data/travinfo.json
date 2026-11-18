@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-17T13:22:55.437Z",
+ "opdateret": "2026-11-18T13:01:51.148Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4371,6 +4371,22 @@
    "hestId": 653665,
    "hest": "Leika Time",
    "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-21",
+   "bane": "År",
+   "loeb": 1,
+   "hestId": 660372,
+   "hest": "Magic Act",
+   "kusk": "Casper M. Nielsen"
+  },
+  {
+   "dato": "2026-11-21",
+   "bane": "År",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "kusk": "Casper M. Nielsen"
   }
  ]
 }
