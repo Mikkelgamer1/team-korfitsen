@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-18T13:01:51.148Z",
+ "opdateret": "2026-11-19T13:02:08.127Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 247,
+   "starter": 252,
    "sejre": 27,
-   "toer": 25,
+   "toer": 28,
    "treer": 34,
    "procent": 11,
-   "praemier": 1249844
+   "praemier": 1267344
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 293,
+   "starter": 298,
    "sejre": 36,
-   "toer": 34,
+   "toer": 37,
    "treer": 42,
    "procent": 12,
-   "praemier": 1544715
+   "praemier": 1562215
   },
   {
    "aar": 2025,
@@ -226,9 +226,9 @@
    "foedt": "2022-06-10",
    "far": "Gentle Tilly (SE)",
    "mor": "Saxwill Money",
-   "starter": 16,
+   "starter": 17,
    "placeringer": "1-0-1",
-   "praemier": 16250,
+   "praemier": 18750,
    "rekord": "18,9m *15,4ak 17,9am"
   },
   {
@@ -239,9 +239,9 @@
    "foedt": "2022-05-15",
    "far": "Wishing Stone (US)",
    "mor": "Nightingale Jaycee (DE)",
-   "starter": 15,
-   "placeringer": "2-3-1",
-   "praemier": 64000,
+   "starter": 16,
+   "placeringer": "2-4-1",
+   "praemier": 69000,
    "rekord": "20,6m 14,0ak 15,9am 14,8al"
   },
   {
@@ -265,9 +265,9 @@
    "foedt": "2023-05-27",
    "far": "Great Challenger (US)",
    "mor": "Jula Princess (SE)",
-   "starter": 5,
-   "placeringer": "0-0-2",
-   "praemier": 8750,
+   "starter": 6,
+   "placeringer": "0-1-2",
+   "praemier": 13750,
    "rekord": "18,4m 19,2ak 17,4am"
   },
   {
@@ -291,9 +291,9 @@
    "foedt": "2023-04-24",
    "far": "Donato Hanover (US)",
    "mor": "Magna Vang",
-   "starter": 6,
-   "placeringer": "3-0-2",
-   "praemier": 37000,
+   "starter": 7,
+   "placeringer": "3-1-2",
+   "praemier": 42000,
    "rekord": "17,1am"
   },
   {
@@ -564,7 +564,7 @@
    "foedt": "2021-03-11",
    "far": "Campo Bahia (SE)",
    "mor": "Sevrine (IT)",
-   "starter": 6,
+   "starter": 7,
    "placeringer": "0-3-0",
    "praemier": 47984,
    "rekord": "15,7m 17,0am"
@@ -714,6 +714,66 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838315-656762",
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 7,
+   "hestId": 656762,
+   "hest": "Madame X",
+   "placering": "2",
+   "tid": "18,2a",
+   "distance": 2140,
+   "praemie": 5000
+  },
+  {
+   "id": "838319-662079",
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 5,
+   "hestId": 662079,
+   "hest": "Occhio Boko (SE)",
+   "placering": "d",
+   "tid": "ga",
+   "distance": 2140,
+   "praemie": 0
+  },
+  {
+   "id": "838317-656722",
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 656722,
+   "hest": "Magne",
+   "placering": "2",
+   "tid": "17,1a",
+   "distance": 2140,
+   "praemie": 5000
+  },
+  {
+   "id": "838318-653598",
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 3,
+   "hestId": 653598,
+   "hest": "Lucky Choice",
+   "placering": "2",
+   "tid": "16,1a",
+   "distance": 2140,
+   "praemie": 5000
+  },
+  {
+   "id": "838314-654089",
+   "dato": "2026-11-18",
+   "bane": "Ål",
+   "loeb": 1,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "placering": "4",
+   "tid": "18,6a",
+   "distance": 2140,
+   "praemie": 2500
+  },
   {
    "id": "838259-656762",
    "dato": "2026-11-13",
@@ -4316,46 +4376,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-18",
-   "bane": "Ål",
-   "loeb": 1,
-   "hestId": 654089,
-   "hest": "Lisbeth M",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-18",
-   "bane": "Ål",
-   "loeb": 3,
-   "hestId": 653598,
-   "hest": "Lucky Choice",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-18",
-   "bane": "Ål",
-   "loeb": 4,
-   "hestId": 656722,
-   "hest": "Magne",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-18",
-   "bane": "Ål",
-   "loeb": 5,
-   "hestId": 662079,
-   "hest": "Occhio Boko (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-18",
-   "bane": "Ål",
-   "loeb": 7,
-   "hestId": 656762,
-   "hest": "Madame X",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-20",
    "bane": "Od",
