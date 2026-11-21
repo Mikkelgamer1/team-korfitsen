@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-20T12:52:38.412Z",
+ "opdateret": "2026-11-21T12:37:56.934Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 252,
-   "sejre": 27,
+   "starter": 254,
+   "sejre": 28,
    "toer": 28,
-   "treer": 34,
+   "treer": 35,
    "procent": 11,
-   "praemier": 1267344
+   "praemier": 1280844
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 298,
-   "sejre": 36,
+   "starter": 301,
+   "sejre": 37,
    "toer": 37,
-   "treer": 42,
+   "treer": 43,
    "procent": 12,
-   "praemier": 1562215
+   "praemier": 1578215
   },
   {
    "aar": 2025,
@@ -200,9 +200,9 @@
    "foedt": "2022-05-22",
    "far": "Ens Snapshot (US)",
    "mor": "Erica Hall (SE)",
-   "starter": 28,
-   "placeringer": "3-3-1",
-   "praemier": 66713,
+   "starter": 29,
+   "placeringer": "3-3-2",
+   "praemier": 70213,
    "rekord": "22,0m 13,3ak 13,4am"
   },
   {
@@ -213,10 +213,10 @@
    "foedt": "2022-04-22",
    "far": "Tobin Kronos (IT)",
    "mor": "Aparte",
-   "starter": 7,
-   "placeringer": "3-1-0",
-   "praemier": 32500,
-   "rekord": "*17,7m"
+   "starter": 8,
+   "placeringer": "4-1-0",
+   "praemier": 42500,
+   "rekord": "*17,7m *18,7am"
   },
   {
    "id": 654089,
@@ -714,6 +714,30 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838363-653665",
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 3,
+   "hestId": 653665,
+   "hest": "Leika Time",
+   "placering": "1",
+   "tid": "18,7ag",
+   "distance": 2140,
+   "praemie": 10000
+  },
+  {
+   "id": "838364-653672",
+   "dato": "2026-11-20",
+   "bane": "Od",
+   "loeb": 2,
+   "hestId": 653672,
+   "hest": "Lafayette",
+   "placering": "3",
+   "tid": "15,8a",
+   "distance": 2140,
+   "praemie": 3500
+  },
   {
    "id": "838315-656762",
    "dato": "2026-11-18",
@@ -4376,22 +4400,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-20",
-   "bane": "Od",
-   "loeb": 2,
-   "hestId": 653672,
-   "hest": "Lafayette",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-20",
-   "bane": "Od",
-   "loeb": 3,
-   "hestId": 653665,
-   "hest": "Leika Time",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-21",
    "bane": "År",
