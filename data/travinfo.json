@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-21T12:37:56.934Z",
+ "opdateret": "2026-11-22T12:34:24.325Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 254,
+   "starter": 256,
    "sejre": 28,
    "toer": 28,
-   "treer": 35,
+   "treer": 36,
    "procent": 11,
-   "praemier": 1280844
+   "praemier": 1283844
   },
   {
    "aar": 2025,
@@ -148,9 +148,9 @@
    "foedt": "2020-05-14",
    "far": "Orlando Vici (FR)",
    "mor": "Erica Hall (SE)",
-   "starter": 32,
-   "placeringer": "2-4-6",
-   "praemier": 66000,
+   "starter": 33,
+   "placeringer": "2-4-7",
+   "praemier": 69000,
    "rekord": "17,7m 14,8ak 14,8am"
   },
   {
@@ -278,7 +278,7 @@
    "foedt": "2023-03-14",
    "far": "Galius (FR)",
    "mor": "Face My Act (NO)",
-   "starter": 6,
+   "starter": 7,
    "placeringer": "1-1-0",
    "praemier": 16000,
    "rekord": "*19,7k 19,7m 19,9am"
@@ -714,6 +714,30 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838395-649115",
+   "dato": "2026-11-21",
+   "bane": "År",
+   "loeb": 3,
+   "hestId": 649115,
+   "hest": "I'm Vici",
+   "placering": "3",
+   "tid": "18,2a",
+   "distance": 1800,
+   "praemie": 3000
+  },
+  {
+   "id": "838393-660372",
+   "dato": "2026-11-21",
+   "bane": "År",
+   "loeb": 1,
+   "hestId": 660372,
+   "hest": "Magic Act",
+   "placering": "d",
+   "tid": "g5",
+   "distance": 1820,
+   "praemie": 0
+  },
   {
    "id": "838363-653665",
    "dato": "2026-11-20",
@@ -4399,22 +4423,5 @@
    "praemie": 1100
   }
  ],
- "kommende": [
-  {
-   "dato": "2026-11-21",
-   "bane": "År",
-   "loeb": 1,
-   "hestId": 660372,
-   "hest": "Magic Act",
-   "kusk": "Casper M. Nielsen"
-  },
-  {
-   "dato": "2026-11-21",
-   "bane": "År",
-   "loeb": 3,
-   "hestId": 649115,
-   "hest": "I'm Vici",
-   "kusk": "Casper M. Nielsen"
-  }
- ]
+ "kommende": []
 }
