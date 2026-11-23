@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-22T12:34:24.325Z",
+ "opdateret": "2026-11-23T14:36:27.338Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -4423,5 +4423,22 @@
    "praemie": 1100
   }
  ],
- "kommende": []
+ "kommende": [
+  {
+   "dato": "2026-11-27",
+   "bane": "År",
+   "loeb": 3,
+   "hestId": 655727,
+   "hest": "Mon Cheri",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-27",
+   "bane": "År",
+   "loeb": 6,
+   "hestId": 662079,
+   "hest": "Occhio Boko (SE)",
+   "kusk": "Nicklas Korfitsen"
+  }
+ ]
 }
