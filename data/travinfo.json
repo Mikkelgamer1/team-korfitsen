@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-23T14:36:27.338Z",
+ "opdateret": "2026-11-24T14:51:36.065Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 301,
+   "starter": 305,
    "sejre": 37,
-   "toer": 37,
+   "toer": 39,
    "treer": 43,
    "procent": 12,
-   "praemier": 1578215
+   "praemier": 1590215
   },
   {
    "aar": 2025,
@@ -139,6 +139,19 @@
    "placeringer": "9-3-3",
    "praemier": 186027,
    "rekord": "*15,9m 15,2l *14,7ak 12,7am *14,7al"
+  },
+  {
+   "id": 662421,
+   "navn": "Global Heavenly (SE)",
+   "alder": 3,
+   "koen": "Hoppe",
+   "foedt": "2023-01-30",
+   "far": "Face Time Bourbon (FR)",
+   "mor": "Zeeland Kronos (SE)",
+   "starter": 0,
+   "placeringer": "0-0-0",
+   "praemier": 0,
+   "rekord": ""
   },
   {
    "id": 649115,
@@ -4438,6 +4451,54 @@
    "loeb": 6,
    "hestId": 662079,
    "hest": "Occhio Boko (SE)",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-28",
+   "bane": "Ål",
+   "loeb": 2,
+   "hestId": 653672,
+   "hest": "Lafayette",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-28",
+   "bane": "Ål",
+   "loeb": 4,
+   "hestId": 654089,
+   "hest": "Lisbeth M",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-28",
+   "bane": "Ål",
+   "loeb": 6,
+   "hestId": 649481,
+   "hest": "Just Time",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-28",
+   "bane": "Ål",
+   "loeb": 91,
+   "hestId": 658769,
+   "hest": "Netflix",
+   "kusk": "Mads Henriksen"
+  },
+  {
+   "dato": "2026-11-28",
+   "bane": "Ål",
+   "loeb": 91,
+   "hestId": 658812,
+   "hest": "New Born Vang",
+   "kusk": "Nicklas Korfitsen"
+  },
+  {
+   "dato": "2026-11-30",
+   "bane": "Sk",
+   "loeb": 6,
+   "hestId": 659623,
+   "hest": "Magnificent Sisu (SE)",
    "kusk": "Nicklas Korfitsen"
   }
  ]
