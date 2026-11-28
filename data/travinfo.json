@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-11-27T13:50:18.312Z",
+ "opdateret": "2026-11-28T12:58:13.253Z",
  "traener": {
   "foedt": 1999,
   "hjemmebane": "Spar Nord Arena Aalborg",
@@ -9,12 +9,12 @@
  "traenerStatistik": [
   {
    "aar": 2026,
-   "starter": 256,
+   "starter": 258,
    "sejre": 28,
    "toer": 28,
    "treer": 36,
    "procent": 11,
-   "praemier": 1283844
+   "praemier": 1286344
   },
   {
    "aar": 2025,
@@ -56,12 +56,12 @@
  "kuskStatistik": [
   {
    "aar": 2026,
-   "starter": 305,
+   "starter": 308,
    "sejre": 37,
    "toer": 39,
-   "treer": 43,
+   "treer": 44,
    "procent": 12,
-   "praemier": 1590215
+   "praemier": 1596215
   },
   {
    "aar": 2025,
@@ -395,9 +395,9 @@
    "foedt": "2023-02-28",
    "far": "Hayden Hanover (US)",
    "mor": "Trevi Dilli",
-   "starter": 9,
+   "starter": 10,
    "placeringer": "3-0-0",
-   "praemier": 31500,
+   "praemier": 34000,
    "rekord": "*18,3k 17,7m *15,8ak 17,5am"
   },
   {
@@ -577,10 +577,10 @@
    "foedt": "2021-03-11",
    "far": "Campo Bahia (SE)",
    "mor": "Sevrine (IT)",
-   "starter": 7,
+   "starter": 8,
    "placeringer": "0-3-0",
    "praemier": 47984,
-   "rekord": "15,7m 17,0am"
+   "rekord": "15,7m 17,8ak 17,0am"
   },
   {
    "id": 660378,
@@ -727,6 +727,30 @@
   }
  ],
  "resultater": [
+  {
+   "id": "838443-662079",
+   "dato": "2026-11-27",
+   "bane": "År",
+   "loeb": 6,
+   "hestId": 662079,
+   "hest": "Occhio Boko (SE)",
+   "placering": "0",
+   "tid": "17,8a",
+   "distance": 1800,
+   "praemie": 0
+  },
+  {
+   "id": "838447-655727",
+   "dato": "2026-11-27",
+   "bane": "År",
+   "loeb": 3,
+   "hestId": 655727,
+   "hest": "Mon Cheri",
+   "placering": "4",
+   "tid": "19,0a",
+   "distance": 2300,
+   "praemie": 2500
+  },
   {
    "id": "838395-649115",
    "dato": "2026-11-21",
@@ -4437,30 +4461,6 @@
   }
  ],
  "kommende": [
-  {
-   "dato": "2026-11-27",
-   "bane": "År",
-   "loeb": 3,
-   "hestId": 655727,
-   "hest": "Mon Cheri",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-27",
-   "bane": "År",
-   "loeb": 6,
-   "hestId": 662079,
-   "hest": "Occhio Boko (SE)",
-   "kusk": "Nicklas Korfitsen"
-  },
-  {
-   "dato": "2026-11-28",
-   "bane": "Ål",
-   "loeb": 2,
-   "hestId": 653672,
-   "hest": "Lafayette",
-   "kusk": "Nicklas Korfitsen"
-  },
   {
    "dato": "2026-11-28",
    "bane": "Ål",
